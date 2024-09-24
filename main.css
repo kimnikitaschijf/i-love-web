@@ -38,11 +38,15 @@ li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: var(--plaatjes);
 }
 
-/* .active {
-    background-color: #04AA6D;
-  } */
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    rotate: 345deg;
+    color: var(--kopjes);
+    position: absolute;
+    text-align: center;
+}
