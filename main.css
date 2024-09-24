@@ -1,0 +1,48 @@
+html {
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root {
+    --header: #B7B0A6;
+    --tekst: #FFFFFF;
+    --kopjes: #B7B0A6;
+    --ondertitel: #121212;
+    --plaatjes: #EDECE8;
+}
+
+header {
+    font-size: 12px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--header);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    background-color: var(--header);
+    color: var(--tekst);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: var(--plaatjes);
+}
+
+/* .active {
+    background-color: #04AA6D;
+  } */
