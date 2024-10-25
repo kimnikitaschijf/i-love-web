@@ -27,7 +27,7 @@ header {
 
     ul {
         display: flex;
-        justify-content:space-evenly;
+        justify-content: space-evenly;
         list-style-type: none;
         overflow: hidden;
         background-color: var(--header);
@@ -46,7 +46,8 @@ header {
         padding: 14px 16px;
         text-decoration: none;
     }
-/* 
+
+    /* 
     a:nth-of-type(2) {
         font-size: 1rem;
         border: none;
@@ -56,4 +57,59 @@ header {
     li a:hover {
         opacity: 40%;
     }
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    rotate: 350deg;
+    color: var(--kopjes);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Cursive', sans-serif;
+    color: #b3b0a9;
+    margin-bottom: 30px;
+
+    .logboek {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.log-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.log-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+ul li::before {
+    content: "•";
+    color: #333;
+    margin-right: 10px;
 }
