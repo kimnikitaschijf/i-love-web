@@ -45,13 +45,14 @@ header {
 
 /* nav knoppen styling */
 .nav-button {
+    font-size: var(--font-size-menu);
     background: var(--button-color);
     color: var(--primary-text-color);
     border: none;
     border-radius: var(--border-radius-button);
     padding: var(--spacing-small) var(--spacing-medium);
     font-family: var(--button-font);
-    cursor: pointer;
+    text-decoration: none;
 }
 
 /* nav buttons op hover/active */
