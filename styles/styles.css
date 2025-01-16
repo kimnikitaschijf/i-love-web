@@ -6,33 +6,25 @@ body {
     padding: 0;
 }
 
+/* header algemene styling */
 header {
     padding: var(--spacing-medium);
     background: var(--primary-background-color);
 }
 
-.horizontal-scroll-nav {
+/* bovenste buttons */
+.profile-buttons {
     display: flex;
-    overflow-x: auto;
-    gap: var(--spacing-medium);
-    padding: var(--spacing-small);
-    scroll-behavior: smooth;
+    justify-content: wrap;
+    padding-bottom: var(--spacing-small);
 }
 
-.nav-button {
-    background: var(--button-color);
-    color: var(--primary-text-color);
-    border: none;
-    border-radius: var(--border-radius-button);
-    padding: var(--spacing-small) var(--spacing-medium);
-    font-family: var(--button-font);
+/* foto bovenaan */
+.profile-picture {
+    width: 40px;
 }
 
-button:hover {
-    background-color: var(--button-hover);
-}
-
-
+/* contact knop */
 .contact-button {
     margin-left: auto;
     background: transparent;
@@ -42,18 +34,8 @@ button:hover {
     border-radius: var(--border-radius);
 }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-medium);
-    padding: var(--spacing-medium);
-}
-
-h2 {
-    padding: var(--spacing-medium)
-}
-
-.projects-scroll {
+/* scroll nav knoppen */
+.horizontal-scroll-nav {
     display: flex;
     overflow-x: auto;
     gap: var(--spacing-medium);
@@ -61,6 +43,31 @@ h2 {
     scroll-behavior: smooth;
 }
 
+/* nav knoppen styling */
+.nav-button {
+    background: var(--button-color);
+    color: var(--primary-text-color);
+    border: none;
+    border-radius: var(--border-radius-button);
+    padding: var(--spacing-small) var(--spacing-medium);
+    font-family: var(--button-font);
+    cursor: pointer;
+}
+
+/* nav buttons op hover/active */
+.nav-button:hover {
+    background-color: var(--button-hover);
+}
+
+/* 8 balken bovenaan */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-medium);
+    padding: var(--spacing-medium);
+}
+
+/* 8 balken layout */
 .project-card-head {
     background: var(--button-color);
     border-radius: var(--border-radius);
@@ -69,6 +76,21 @@ h2 {
     text-align: center;
 }
 
+/* titels boven vlakken */
+h2 {
+    padding: var(--spacing-medium)
+}
+
+/* vlakken van projecten etc */
+.projects-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: var(--spacing-medium);
+    padding: var(--spacing-small);
+    scroll-behavior: smooth;
+}
+
+/* vlakken van projecten layout */
 .project-card {
     background: var(--button-color);
     padding: var(--spacing-large);
@@ -76,10 +98,7 @@ h2 {
     text-align: center;
 }
 
-.meme {
-    font-style: italic;
-}
-
+/* footer nav styling */
 footer.bottom-nav {
     display: flex;
     justify-content: space-around;
@@ -90,6 +109,7 @@ footer.bottom-nav {
     width: 100%;
 }
 
+/* footer nav icoontjes */
 .nav-icon {
     background: transparent;
     border: none;
