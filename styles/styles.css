@@ -1,0 +1,98 @@
+body {
+    font-family: var(--site-font);
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: var(--spacing-medium);
+    background: var(--primary-background-color);
+}
+
+.horizontal-scroll-nav {
+    display: flex;
+    overflow-x: auto;
+    gap: var(--spacing-medium);
+    padding: var(--spacing-small);
+    scroll-behavior: smooth;
+}
+
+.nav-button {
+    background: var(--button-color);
+    color: var(--primary-text-color);
+    border: none;
+    border-radius: var(--border-radius-button);
+    padding: var(--spacing-small) var(--spacing-medium);
+    font-family: var(--button-font);
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+
+.contact-button {
+    margin-left: auto;
+    background: transparent;
+    border: 2px solid var(--button-active);
+    padding: var(--spacing-small) var(--spacing-medium);
+    color: var(--primary-text-color);
+    border-radius: var(--border-radius);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-medium);
+    padding: var(--spacing-medium);
+}
+
+h2 {
+    padding: var(--spacing-medium)
+}
+
+.projects-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: var(--spacing-medium);
+    padding: var(--spacing-small);
+    scroll-behavior: smooth;
+}
+
+.project-card-head {
+    background: var(--button-color);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-medium);
+    color: var(--primary-text-color);
+    text-align: center;
+}
+
+.project-card {
+    background: var(--button-color);
+    padding: var(--spacing-large);
+    color: var(--primary-text-color);
+    text-align: center;
+}
+
+.meme {
+    font-style: italic;
+}
+
+footer.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    background: var(--button-color);
+    padding: var(--spacing-small);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-icon {
+    background: transparent;
+    border: none;
+    color: var(--primary-text-color);
+    font-size: var(--font-size-large);
+}

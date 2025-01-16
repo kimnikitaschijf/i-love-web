@@ -1,0 +1,106 @@
+/* =============================================
+   Basis CSS
+   ============================================= */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*:focus-visible {
+    outline: none;
+    box-shadow: 0px 10px 20px 0px var(--box-shadow);
+}
+
+/* =============================================
+   CSS-variabelen
+   ============================================= */
+
+body {
+    /* Typografie
+
+    /* Lettertypefamilies */
+    --heading-font: 'Poppins', sans-serif;
+    /* Voor titels */
+    --site-font: 'Inter', sans-serif;
+    /* Voor lopende tekst */
+    --button-font: var(--site-font);
+    /* Voor knoppen */
+    --icon-font: 'Font Awesome 5 Free';
+    /* Voor iconen */
+
+    /* Basis Fontgroottes (mobiel standaard) */
+    --font-size-huge: 2.5rem;
+    /* Voor grote titels */
+    --font-size-large: 2rem;
+    /* Voor sectie-titels */
+    --font-size-medium: 1.5rem;
+    /* Voor subtitels */
+    --font-size-normal: 1rem;
+    /* Voor paragrafen */
+    --font-size-small: 0.875rem;
+    /* Voor kleinere tekst */
+    --font-size-menu: var(--font-size-normal);
+    /* Voor navigatie */
+
+    /* Fontgroottes (tablet) */
+    --font-size-huge-tablet: 3rem;
+    --font-size-large-tablet: 2.5rem;
+    --font-size-medium-tablet: 1.8rem;
+    --font-size-normal-tablet: 1.1rem;
+    --font-size-small-tablet: 0.9rem;
+
+    /* Fontgroottes (desktop) */
+    --font-size-huge-desktop: 4rem;
+    --font-size-large-desktop: 3rem;
+    --font-size-medium-desktop: 2rem;
+    --font-size-normal-desktop: 1.2rem;
+    --font-size-small-desktop: 1rem;
+
+    /* Lijnhoogtes */
+    --line-height-huge: 1.2;
+    --line-height-large: 1.4;
+    --line-height-medium: 1.6;
+    --line-height-normal: 1.8;
+    --line-height-small: 1.4;
+
+    /* Responsive marges (optioneel, voor consistentie) */
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+ 
+    /* Kleuren */
+    --primary-background-color: #121212;
+    --primary-text-color: #FFFFFF;
+
+    /* Knoppen */
+    --button-color: #212121;
+    --button-active: #1EB954;
+    --button-hover: #147B38;
+    --button-gradient: linear-gradient(90deg, rgba(129,58,180,1) 0%, rgba(253,29,120,1) 64%, rgba(69,106,252,1) 100%);
+
+    /* Hoeken */
+    --border-radius: 5px;
+    --border-radius-button: 50px;
+}
+
+/* Media queries voor responsiviteit */
+@media (min-width: 768px) {
+    body {
+        --font-size-huge: var(--font-size-huge-tablet);
+        --font-size-large: var(--font-size-large-tablet);
+        --font-size-medium: var(--font-size-medium-tablet);
+        --font-size-normal: var(--font-size-normal-tablet);
+        --font-size-small: var(--font-size-small-tablet);
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        --font-size-huge: var(--font-size-huge-desktop);
+        --font-size-large: var(--font-size-large-desktop);
+        --font-size-medium: var(--font-size-medium-desktop);
+        --font-size-normal: var(--font-size-normal-desktop);
+        --font-size-small: var(--font-size-small-desktop);
+    }
+}
