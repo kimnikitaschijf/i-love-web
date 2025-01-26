@@ -45,7 +45,7 @@ header {
 
 /* nav knoppen styling */
 .nav-button {
-    font-size: var(--font-size-menu);
+    font-size: var(--font-size-small);
     background: var(--button-color);
     color: var(--primary-text-color);
     border: none;
