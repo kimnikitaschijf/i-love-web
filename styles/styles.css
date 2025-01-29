@@ -33,7 +33,7 @@ header {
         border: 2px solid var(--button-active);
         padding: var(--spacing-small) var(--spacing-medium);
         color: var(--primary-text-color);
-        border-radius: var(--border-radius);
+        border-radius: var(--border-radius-button);
     }
 
     /* scroll nav knoppen */
@@ -62,6 +62,7 @@ header {
     .nav-button:hover {
         background-color: var(--button-hover);
     }
+
 }
 
 
@@ -101,6 +102,14 @@ header {
         font-weight: 600;
     }
 
+}
+
+.sub-title {
+    font-size: var(--font-size-small);
+    font-weight: 100;
+    margin-top: 10px;
+    opacity: 50%;
+    padding-inline-start: 20px;
 }
 
 /* titels van preview stukken */
@@ -164,5 +173,46 @@ footer.bottom-nav {
         border: none;
         color: var(--primary-text-color);
         font-size: var(--font-size-large);
+    }
+}
+
+/* Voor kleinere schermen (max 768px) */
+@media screen and (max-width: 768px) {
+    .project-photo {
+        height: 60px; /* Minimale hoogte */
+    }
+}
+
+/* Voor middelgrote schermen (min 769px en max 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* Twee kolommen */
+        gap: var(--spacing-medium);
+    }
+
+    .project-photo {
+        height: 100px; /* Middelgrote afbeelding */
+    }
+}
+
+/* Voor grote schermen (min 1025px) */
+@media screen and (min-width: 1025px) {
+    .projects-grid {
+        display: flex; /* Zet de projecten naast elkaar */
+        flex-wrap: nowrap;
+        gap: var(--spacing-medium); /* Houdt de gap consistent */
+        justify-content: flex-start; /* Zorgt voor gelijke verdeling */
+    }
+
+    .project-card-head {
+        flex-direction: row; /* Zet de titel en afbeelding naast elkaar */
+        align-items: center; /* Zorgt voor uitlijning in het midden */
+        gap: var(--spacing-small); /* Behoudt consistente afstand */
+        flex-wrap: nowrap;
+    }
+
+    .project-photo {
+        height: 100px; /* Maximale hoogte */
+        width: auto;
     }
 }
