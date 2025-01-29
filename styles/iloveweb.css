@@ -68,6 +68,8 @@ body {
     --spacing-small: 0.5rem;
     --spacing-medium: 1rem;
     --spacing-large: 2rem;
+    --spacing-huge: 3rem;
+
  
     /* Kleuren */
     --primary-background-color: #121212;

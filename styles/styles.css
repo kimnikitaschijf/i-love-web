@@ -6,59 +6,67 @@ body {
     padding: 0;
 }
 
+
 /* header algemene styling */
+
+
 header {
     padding: var(--spacing-medium);
     background: var(--primary-background-color);
+
+    /* bovenste buttons */
+    .profile-buttons {
+        display: flex;
+        justify-content: wrap;
+        padding-bottom: var(--spacing-small);
+    }
+
+    /* foto bovenaan */
+    .profile-picture {
+        width: 40px;
+    }
+
+    /* contact knop */
+    .contact-button {
+        margin-left: auto;
+        background: transparent;
+        border: 2px solid var(--button-active);
+        padding: var(--spacing-small) var(--spacing-medium);
+        color: var(--primary-text-color);
+        border-radius: var(--border-radius);
+    }
+
+    /* scroll nav knoppen */
+    .horizontal-scroll-nav {
+        display: flex;
+        gap: var(--spacing-medium);
+        padding: var(--spacing-small);
+        scroll-behavior: smooth;
+        overflow-x: auto;
+    }
+
+    /* nav knoppen styling */
+    .nav-button {
+        font-size: var(--font-size-small);
+        background: var(--button-color);
+        color: var(--primary-text-color);
+        border: none;
+        border-radius: var(--border-radius-button);
+        padding: var(--spacing-small) var(--spacing-medium);
+        font-family: var(--button-font);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    /* nav buttons op hover/active */
+    .nav-button:hover {
+        background-color: var(--button-hover);
+    }
 }
 
-/* bovenste buttons */
-.profile-buttons {
-    display: flex;
-    justify-content: wrap;
-    padding-bottom: var(--spacing-small);
-}
 
-/* foto bovenaan */
-.profile-picture {
-    width: 40px;
-}
+/* bovenste 8 project balken */
 
-/* contact knop */
-.contact-button {
-    margin-left: auto;
-    background: transparent;
-    border: 2px solid var(--button-active);
-    padding: var(--spacing-small) var(--spacing-medium);
-    color: var(--primary-text-color);
-    border-radius: var(--border-radius);
-}
-
-/* scroll nav knoppen */
-.horizontal-scroll-nav {
-    display: flex;
-    overflow-x: auto;
-    gap: var(--spacing-medium);
-    padding: var(--spacing-small);
-    scroll-behavior: smooth;
-}
-
-/* nav knoppen styling */
-.nav-button {
-    font-size: var(--font-size-small);
-    background: var(--button-color);
-    color: var(--primary-text-color);
-    border: none;
-    border-radius: var(--border-radius-button);
-    padding: var(--spacing-small) var(--spacing-medium);
-    font-family: var(--button-font);
-    text-decoration: none;
-}
-
-/* nav buttons op hover/active */
-.nav-button:hover {
-    background-color: var(--button-hover);
-}
 
 /* 8 balken bovenaan */
 .projects-grid {
@@ -66,38 +74,79 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-medium);
     padding: var(--spacing-medium);
+    margin-top: -15px;
+
+    /* 8 balken layout */
+    .project-card-head {
+        display: flex;
+        justify-content: flex-start;
+        background: var(--button-color);
+        border-radius: var(--border-radius);
+        padding: 5px;
+        color: var(--primary-text-color);
+        text-align: center;
+        align-items: center;
+    }
+
+    /* foto's in nav balk */
+    .project-photo {
+        width: auto;
+        height: 60px;
+    }
+
+    /* titels in nav balk */
+    .card-title {
+        padding: var(--spacing-small);
+        font-size: var(--font-size-small);
+        font-weight: 600;
+    }
+
 }
 
-/* 8 balken layout */
-.project-card-head {
-    background: var(--button-color);
-    border-radius: var(--border-radius);
-    padding: var(--spacing-medium);
-    color: var(--primary-text-color);
-    text-align: center;
-}
-
-/* titels boven vlakken */
-h2 {
-    padding: var(--spacing-medium)
+/* titels van preview stukken */
+.preview-title {
+    padding: var(--spacing-small);
+    font-size: var(--font-size-medium);
+    font-weight: 600;
+    margin: 5px;
 }
 
 /* vlakken van projecten etc */
 .projects-scroll {
     display: flex;
     overflow-x: auto;
-    gap: var(--spacing-medium);
-    padding: var(--spacing-small);
+    gap: var(--spacing-small);
     scroll-behavior: smooth;
+
+    /* vlakken van projecten layout */
+    .project-card {
+        color: var(--primary-text-color);
+        text-align: left;
+        margin: 10px;
+    }
+
+    /* preview foto's */
+    .preview-photo {
+        width: auto;
+        height: 180px;
+    }
+
+    /* titel van project preview */
+    h3 {
+        font-size: var(--font-size-normal);
+        font-weight: 800;
+        margin: 2px;
+    }
+
+    /* ondertitel project preview */
+    p {
+        font-size: var(--font-size-small);
+        font-weight: 100;
+        margin-top: 10px;
+        opacity: 50%;
+    }
 }
 
-/* vlakken van projecten layout */
-.project-card {
-    background: var(--button-color);
-    padding: var(--spacing-large);
-    color: var(--primary-text-color);
-    text-align: center;
-}
 
 /* footer nav styling */
 footer.bottom-nav {
@@ -108,12 +157,12 @@ footer.bottom-nav {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
 
-/* footer nav icoontjes */
-.nav-icon {
-    background: transparent;
-    border: none;
-    color: var(--primary-text-color);
-    font-size: var(--font-size-large);
+    /* footer nav icoontjes */
+    .nav-icon {
+        background: transparent;
+        border: none;
+        color: var(--primary-text-color);
+        font-size: var(--font-size-large);
+    }
 }
