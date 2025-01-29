@@ -154,7 +154,7 @@ footer.bottom-nav {
     justify-content: space-around;
     background: var(--button-color);
     padding: var(--spacing-small);
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
 
