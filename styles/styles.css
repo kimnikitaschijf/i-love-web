@@ -19,6 +19,13 @@ header {
         display: flex;
         justify-content: wrap;
         padding-bottom: var(--spacing-small);
+        align-items: center;
+    }
+
+    h1 {
+        font-size: xx-small;
+        opacity: 50%;
+        text-align: center;
     }
 
     /* foto bovenaan */
@@ -39,10 +46,12 @@ header {
     /* scroll nav knoppen */
     .horizontal-scroll-nav {
         display: flex;
+        flex-wrap: nowrap;
         gap: var(--spacing-medium);
         padding: var(--spacing-small);
         scroll-behavior: smooth;
         overflow-x: auto;
+        align-items: center;
     }
 
     /* nav knoppen styling */
@@ -93,6 +102,7 @@ header {
     .project-photo {
         width: auto;
         height: 60px;
+        border-radius: var(--border-radius);
     }
 
     /* titels in nav balk */
@@ -156,25 +166,6 @@ header {
     }
 }
 
-
-/* footer nav styling */
-footer.bottom-nav {
-    display: flex;
-    justify-content: space-around;
-    background: var(--button-color);
-    padding: var(--spacing-small);
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-
-    /* footer nav icoontjes */
-    .nav-icon {
-        background: transparent;
-        border: none;
-        color: var(--primary-text-color);
-        font-size: var(--font-size-large);
-    }
-}
 
 /* Voor kleinere schermen (max 768px) */
 @media screen and (max-width: 768px) {

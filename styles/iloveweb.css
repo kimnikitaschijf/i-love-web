@@ -108,3 +108,23 @@ body {
         --font-size-small: var(--font-size-small-desktop);
     }
 }
+
+/* footer nav styling */
+footer.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    background: var(--button-color);
+    padding: var(--spacing-small);
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+
+    /* footer nav icoontjes */
+    .nav-icon {
+        background: transparent;
+        border: none;
+        color: var(--primary-text-color);
+        font-size: var(--font-size-large);
+    }
+}
+
