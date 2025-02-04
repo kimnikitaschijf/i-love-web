@@ -126,5 +126,9 @@ footer.bottom-nav {
         color: var(--primary-text-color);
         font-size: var(--font-size-large);
     }
+
+    a {
+        text-decoration: none;
+    }
 }
 

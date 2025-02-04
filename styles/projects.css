@@ -2,101 +2,99 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    /* background: linear-gradient(180deg, rgb(16, 16, 66) 0%, rgba(18, 18, 18, 1) 72%); */
+    background: linear-gradient(180deg, rgb(92, 72, 49) 0%, rgba(18, 18, 18, 1) 30%);
     color: #FFFFFF;
     background-color: var(--primary-background-color);
 }
 
 /* Header styling */
-.projects-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px;
+#projects-header {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 10px;
+    margin: 15px;
+
+    .back-button {
+        background: transparent;
+        border: none;
+        color: #FFFFFF;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    /* Grote afbeelding */
+    .large-photo {
+        padding-top: -10px;
+        width: 300px;
+        height: 300px;
+    }
 }
 
-h1 {
-    font-size: var(--font-size-normal);
-    font-weight: 800;
-    margin: 2px;
-}
+section {
+    h1 {
+        padding-top: 15px;
+        font-size: var(--font-size-normal);
+        font-weight: 800;
+        margin: 15px;
+        font-size: var(--font-size-medium);
+    }
 
-.back-button {
-    background: transparent;
-    border: none;
-    color: #FFFFFF;
-    font-size: 24px;
-    cursor: pointer;
-}
+    .profile-info {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
 
-.projects-title {
-    font-size: var(--font-size-large);
-    font-weight: 600;
-    margin: 0;
-}
+        .profile-image {
+            width: 40px;
+            height: auto;
+            cursor: pointer;
+            margin-left: 15px;
+        }
 
-.add-button {
-    width: 50px;
-    height: 50px;
-    background: #4CAF50;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
+        .sub-title {
+            font-size: var(--font-size-small);
+            font-weight: 100;
+            opacity: 70%;
+            margin-left: 15px;
+        }
+    }
 }
-
-/* Grote afbeelding */
-.project-large {
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 16px;
-    position: relative;
-}
-
-.large-placeholder {
-    width: 300px;
-    height: 300px;
-    background: #FFFFFF;
-}
-
 /* Projectlijst */
-.project-list {
+#project-list {
     display: flex;
     flex-direction: column;
     gap: 5px;
     padding: 0 16px;
     overflow-y: auto;
-}
 
-.project-item {
-    display: flex;
-    align-items: center;
-    padding: 12px 0;
-}
+    .project-item {
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
 
-.project-thumbnail {
-    width: 50px;
-    height: 50px;
-    background: rgba(255, 255, 255, 0.1);
-    margin-right: 16px;
-}
+        .project-thumbnail {
+            width: 50px;
+            height: 50px;
+            background: #ffffff1a;
+            margin-right: 16px;
+        }
 
-.project-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+        .project-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
-.project-title {
-    font-size: 16px;
-    font-weight: 600;
-    margin: 0;
-}
+            .project-title {
+                font-size: var(--font-size-normal);
+                font-weight: 600;
+            }
 
-.project-subtitle {
-    font-size: 14px;
-    color: #BBBBBB;
-    margin: 4px 0 0;
+            .project-subtitle {
+                font-size: var(--font-size-small);
+                color: #BBBBBB;
+                margin-top: -10px;
+            }
+        }
+    }
 }
-

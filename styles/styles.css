@@ -112,13 +112,26 @@ header {
         font-weight: 600;
     }
 
+    /* .project-card-head :hover{
+        background: var(--button-hover);
+    } */
+
+}
+
+.main-sub-title {
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    margin-top: 0px;
+    opacity: 80%;
+    padding-inline-start: 20px;
+    text-align: center;
 }
 
 .sub-title {
     font-size: var(--font-size-small);
     font-weight: 100;
     margin-top: 10px;
-    opacity: 50%;
+    opacity: 70%;
     padding-inline-start: 20px;
 }
 
@@ -162,7 +175,7 @@ header {
         font-size: var(--font-size-small);
         font-weight: 100;
         margin-top: 10px;
-        opacity: 50%;
+        opacity: 70%;
     }
 }
 
