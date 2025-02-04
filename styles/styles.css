@@ -16,12 +16,6 @@ header {
         align-items: center;
     }
 
-    h1 {
-        font-size: xx-small;
-        opacity: 50%;
-        text-align: center;
-    }
-
     /* foto bovenaan */
     .profile-picture {
         width: 40px;
@@ -68,6 +62,9 @@ header {
 
 }
 
+.hightlight {
+ font-weight: bold;
+}
 
 /* bovenste 8 project balken */
 
@@ -90,6 +87,7 @@ header {
         color: var(--primary-text-color);
         text-align: center;
         align-items: center;
+        text-decoration: none;
     }
 
     /* foto's in nav balk */
@@ -106,6 +104,7 @@ header {
         font-weight: 600;
         margin: auto;
     }
+
 }
 
 .main-sub-title {
@@ -120,9 +119,18 @@ header {
 .sub-title {
     font-size: var(--font-size-small);
     font-weight: 100;
-    margin-top: 10px;
+    margin-top: 0px;
     opacity: 70%;
     padding-left: 10px;
+}
+
+.extra-sub-title {
+    font-size: var(--font-size-small);
+    font-weight: 100;
+    margin-top: 0px;
+    opacity: 60%;
+    padding: 10px;
+    text-align: center;
 }
 
 /* titels van preview stukken */

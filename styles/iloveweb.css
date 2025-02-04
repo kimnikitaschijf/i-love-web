@@ -47,7 +47,7 @@ body {
     /* Voor paragrafen */
     --font-size-small: 0.875rem;
     /* Voor kleinere tekst */
-    --font-size-xsmall: 0.500rem;
+    --font-size-xsmall: 0.780rem;
     /* Voor buttons */
     --font-size-menu: var(--font-size-normal);
     /* Voor navigatie */
