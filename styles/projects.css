@@ -20,11 +20,15 @@ body {
         cursor: pointer;
     }
 
+    img {
+        width: 10px;
+    }
+
     /* Grote afbeelding */
     .large-photo {
         padding-top: -10px;
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: auto;
     }
 }
 

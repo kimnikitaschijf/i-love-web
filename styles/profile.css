@@ -18,6 +18,10 @@ body {
         font-size: 24px;
         cursor: pointer;
     }
+
+    img {
+        width: 10px;
+    }
 }
 
 .paragraph-text {
