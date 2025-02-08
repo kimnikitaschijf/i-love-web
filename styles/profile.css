@@ -1,0 +1,113 @@
+/* Algemene paginastijl */
+body {
+    background-color: var(--primary-background-color);
+}
+
+/* Header styling */
+#projects-header {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 10px;
+    margin-left: 15px;
+
+    .back-button {
+        background: transparent;
+        border: none;
+        color: #FFFFFF;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+.paragraph-text {
+    display: flex;
+    align-items: center;
+    margin: 0px 10px 0px 10px;
+    margin-top: 0px;
+
+    .main-photo {
+        width: 90px;
+        height: auto;
+    }
+
+    .sub-paragraph-text {
+        margin-left: 20px;
+
+        h1 {
+            font-size: var(--font-size-medium);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .main-sub-title {
+            font-size: var(--font-size-small);
+            font-weight: 600;
+            margin-top: 0px;
+            opacity: 80%;
+        }
+
+        .sub-title {
+            font-size: var(--font-size-small);
+            font-weight: 100;
+            opacity: 70%;
+        }
+    }
+
+}
+
+.contact-row {
+    display: flex;
+    gap: 15px;
+    margin: 10px 15px 5px;
+    justify-content: flex-start;
+}
+
+.stock {
+    width: 35px;
+    border-radius: 50px;
+}
+
+.preview-title {
+    font-size: var(--font-size-medium);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+
+#project-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    overflow-y: auto;
+
+    .project-item {
+        display: flex;
+        align-items: center;
+        padding-top: 5px;
+
+        .project-thumbnail {
+            width: 50px;
+            height: 50px;
+            background: #ffffff1a;
+            margin-right: 16px;
+        }
+
+        .project-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .project-title {
+                font-size: var(--font-size-normal);
+                font-weight: 600;
+            }
+
+            .project-subtitle {
+                font-size: var(--font-size-small);
+                color: #BBBBBB;
+                margin-top: -10px;
+            }
+        }
+    }
+}

@@ -53,6 +53,7 @@ header {
         font-family: var(--button-font);
         text-decoration: none;
         text-align: center;
+        white-space: nowrap;
     }
 
     /* nav buttons op hover/active */
