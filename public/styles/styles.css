@@ -104,7 +104,11 @@ header {
         font-size: var(--font-size-small);
         font-weight: 600;
         margin: auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
+    
 
 }
 

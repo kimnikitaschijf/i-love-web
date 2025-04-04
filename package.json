@@ -1,0 +1,26 @@
+{
+  "name": "i-love-web",
+  "version": "1.0.0",
+  "description": "Mijn I love website voor FDND",
+  "main": "server.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimnikitaschijf/i-love-web.git"
+  },
+  "author": "Kim Nikita Schijf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimnikitaschijf/i-love-web/issues"
+  },
+  "homepage": "https://github.com/kimnikitaschijf/i-love-web#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
