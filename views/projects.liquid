@@ -1,22 +1,11 @@
-<!DOCTYPE html>
-<html lang="nl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - I Love Web</title>
-    <link rel="stylesheet" href="styles/projects.css">
-    <link rel="stylesheet" href="styles/iloveweb.css">
-    <link rel="icon" href="assets/site-icon.webp" type="image/x-icon">
-</head>
-
-<body>
-    <header id="projects-header">
-        <a class="back-button" href="index.html"><img src="assets/Arrow.webp" alt="back-button"></a>
-        <img src="assets/projects-page/projects-main-photo.webp" class="large-photo" alt="...">
-    </header>
+{% render 'partials/head.liquid' %}
 
     <main>
+        <header id="projects-header">
+            <a class="back-button" href="index.html"><img src="assets/Arrow.webp" alt="back-button"></a>
+            <img src="assets/projects-page/projects-main-photo.webp" class="large-photo" alt="...">
+        </header>
+
         <section>
             <h1>Projects</h1>
             <article class="profile-info">
@@ -108,12 +97,4 @@
         </section>
     </main>
 
-    <footer class="bottom-nav">
-        <a href="index.html" class="nav-icon">🏠</a>
-        <a href="#" class="nav-icon">🔍</a>
-        <a href="#" class="nav-icon">📚</a>
-    </footer>
-
-</body>
-
-</html>
+    {% render 'partials/foot.liquid' %}

@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="nl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I love web</title>
-    <link rel="stylesheet" href="styles/iloveweb.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="assets/site-icon.webp" type="image/x-icon">
-</head>
+{% render 'partials/head.liquid' %}
 
 <body>
     <header>
@@ -28,7 +18,6 @@
         </nav>
     </header>
 
-   
     <main>
         <h1 class="main-sub-title">My latest projects ⤵️</h1>
 
@@ -373,11 +362,4 @@
         </section>
     </main>
 
-    <footer class="bottom-nav">
-        <a href="index.html" class="nav-icon">🏠</a>
-        <a href="#" class="nav-icon">🔍</a>
-        <a href="#" class="nav-icon">📚</a>
-    </footer>
-</body>
-
-</html>
+{% render 'partials/foot.liquid' %}

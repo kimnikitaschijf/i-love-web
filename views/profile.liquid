@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile - I love web</title>
-    <link rel="stylesheet" href="styles/iloveweb.css" />
-    <link rel="stylesheet" href="styles/profile.css" />
-    <link rel="icon" href="assets/site-icon.webp" type="image/x-icon" />
-  </head>
+{% render 'partials/head.liquid' %}
 
-  <body>
-    <header id="projects-header">
-      <a class="back-button" href="index.html"
-        ><img src="assets/Arrow.webp" alt="back-button"
-      /></a>
-    </header>
-
+<main>
     <section class="paragraph-text">
       <img src="assets/me.webp" alt="me" class="main-photo" />
       <div class="sub-paragraph-text">
@@ -120,5 +105,6 @@
         </div>
       </article>
     </section>
-  </body>
-</html>
+</main>
+
+{% render 'partials/foot.liquid' %}
