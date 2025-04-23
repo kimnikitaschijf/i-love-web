@@ -1,0 +1,2 @@
+**Wat heb je vandaag gedaan?**  
+Vandaag heb ik verder gewerkt aan de squad-pagina voor Amstercampus. Ik heb de inhoud van de pagina ontwikkeld en ervoor gezorgd dat deze structuur en samenhang kreeg. Daarnaast heb ik in Figma een ontwerp gemaakt om het visuele aspect van de pagina vorm te geven. Hierbij heb ik aandacht besteed aan kleuren, typografie en de algemene uitstraling, zodat het ontwerp goed aansluit bij de stijl en sfeer van Amstercampus.

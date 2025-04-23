@@ -2,6 +2,11 @@ body {
     background-color: var(--primary-background-color);
 }
 
+/* body {
+    background: linear-gradient(180deg, #C36D96 5%, #d37aa551 25%, #12121238 30%, #121212 40%);
+    background-color: var(--primary-background-color);
+} */
+
 /* header algemene styling */
 
 header {
@@ -224,3 +229,7 @@ header {
         width: auto;
     }
 }
+
+
+
+

@@ -5,6 +5,15 @@ import express from 'express'
 // Importeer de Liquid package (ook als dependency via npm geïnstalleerd)
 import { Liquid } from 'liquidjs';
 
+// Zodat we de bestanden en mappen kunnen inlezen.
+import { readdir, readFile } from 'node:fs/promises'
+
+import { marked } from 'marked'
+
+const files = await readdir('content')
+
+// console.log(files)
+
 // Maak een nieuwe Express applicatie aan, waarin we de server configureren
 const app = express()
 
@@ -31,6 +40,11 @@ app.get('/', async function (request, response) {
   response.render('index.liquid')
 })
 
+app.get('/digital-garden', async function (request, response) {
+  // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
+  response.render('digital-garden.liquid', {files: files})
+})
+
 app.get('/projects', async function (request, response) {
   // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
   response.render('projects.liquid')
@@ -39,6 +53,19 @@ app.get('/projects', async function (request, response) {
 app.get('/profile', async function (request, response) {
   // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
   response.render('profile.liquid')
+})
+
+// app.get('/projects/:slug', async function (request, response) {
+//   // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
+//   const fileContents = await readFile('content/' + request.params)
+//   response.render('artikel.liquid')
+// })
+
+app.get('/digital-garden/:slug', async function(req, res) {
+  console.log(req.params.slug)
+  const fileContents = await readFile('content/' + req.params.slug + '.md', { encoding: 'utf8' })
+  const markedUpFileContents = marked.parse(fileContents)
+  res.render('artikel.liquid', {fileContents: markedUpFileContents})
 })
 
 // Stel het poortnummer in waar Express op moet gaan luisteren

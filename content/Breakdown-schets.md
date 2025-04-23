@@ -1,0 +1,7 @@
+**Het nut van een breakdown:**  
+Een breakdown helpt je om een duidelijk stappenplan en overzicht te creëren van jouw idee. Het maakt de verschillende fasen van je project visueel en gestructureerd, waardoor je gemakkelijker kunt zien wat er moet gebeuren en in welke volgorde. Dit plan kan je als leidraad gebruiken tijdens de uitvoering van het project, en je kunt er steeds op terugblikken om te checken of je op de juiste weg bent. Het voorkomt dat je belangrijke stappen over het hoofd ziet en helpt je om alles systematisch aan te pakken.
+
+**Waar moet je op letten als je een breakdown maakt?**  
+- **Overzichtelijkheid:** Zorg ervoor dat je breakdown overzichtelijk is, zodat je het gemakkelijk kunt volgen. Dit betekent dat je je werk in logische stappen verdeelt en niet te veel hooi op je vork neemt.
+- **Gebruik kleuren:** Het gebruik van verschillende kleuren voor HTML, CSS en JavaScript maakt het makkelijker om de verschillende onderdelen van je project snel te herkennen. Dit helpt bij het organiseren van je breakdown en maakt het visueel aantrekkelijker.
+- **Diepgang:** Ga goed de diepte in bij het beschrijven van elke stap. Beschrijf niet alleen wat je gaat doen, maar ook hoe je het gaat doen en welke tools of methodes je zult gebruiken. Dit zorgt ervoor dat je een gedetailleerd en uitvoerbaar plan hebt.
