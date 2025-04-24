@@ -18,11 +18,6 @@ header {
     }
 }
 
-/* Profielfoto */
-.profile-picture {
-    width: 40px;
-}
-
 /* Contactknop */
 .contact-button {
     margin-left: auto;
