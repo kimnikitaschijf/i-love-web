@@ -1,81 +1,77 @@
+/* Body achtergrond */
 body {
     background-color: var(--primary-background-color);
 }
 
-/* body {
-    background: linear-gradient(180deg, #C36D96 5%, #d37aa551 25%, #12121238 30%, #121212 40%);
-    background-color: var(--primary-background-color);
-} */
-
-/* header algemene styling */
-
+/* MARK: Header */
 header {
     padding: var(--spacing-medium);
     background: var(--primary-background-color);
 
-    /* bovenste buttons */
+    /* Header buttons */
     .profile-buttons {
         display: flex;
-        justify-content: wrap;
-        padding-bottom: var(--spacing-small);
+        justify-content: space-between;
         align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
     }
-
-    /* foto bovenaan */
-    .profile-picture {
-        width: 40px;
-    }
-
-    /* contact knop */
-    .contact-button {
-        margin-left: auto;
-        background: transparent;
-        border: 2px solid var(--button-active);
-        padding: var(--spacing-small) var(--spacing-medium);
-        color: var(--primary-text-color);
-        border-radius: var(--border-radius-button);
-    }
-
-    /* scroll nav knoppen */
-    .horizontal-scroll-nav {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: var(--spacing-medium);
-        padding: var(--spacing-small);
-        scroll-behavior: smooth;
-        overflow-x: auto;
-        align-items: center;
-    }
-
-    /* nav knoppen styling */
-    .nav-button {
-        font-size: var(--font-size-small);
-        background: var(--button-color);
-        color: var(--primary-text-color);
-        border: none;
-        border-radius: var(--border-radius-button);
-        padding: var(--spacing-small) var(--spacing-medium);
-        font-family: var(--button-font);
-        text-decoration: none;
-        text-align: center;
-        white-space: nowrap;
-    }
-
-    /* nav buttons op hover/active */
-    .nav-button:hover {
-        background-color: var(--button-hover);
-    }
-
 }
 
+/* Profielfoto */
+.profile-picture {
+    width: 40px;
+}
+
+/* Contactknop */
+.contact-button {
+    margin-left: auto;
+    background: transparent;
+    border: 2px solid var(--button-active);
+    padding: var(--spacing-small) var(--spacing-medium);
+    color: var(--primary-text-color);
+    border-radius: var(--border-radius-button);
+}
+
+/* MARK: Horizontale scroll nav */
+.horizontal-scroll-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: var(--spacing-medium);
+    padding: var(--spacing-small);
+    overflow-x: auto;
+    align-items: center;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* Navigatieknoppen */
+.nav-button {
+    font-size: var(--font-size-small);
+    background: var(--button-color);
+    color: var(--primary-text-color);
+    border: none;
+    border-radius: var(--border-radius-button);
+    padding: var(--spacing-small) var(--spacing-medium);
+    font-family: var(--button-font);
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Navigatieknoppen hover effect */
+.nav-button:hover {
+    background-color: var(--button-hover);
+}
+
+/* Highlight text */
 .hightlight {
- font-weight: bold;
+    font-weight: bold;
 }
 
-/* bovenste 8 project balken */
-
-
-/* 8 balken bovenaan */
+/* MARK: Projecten - bovenste 8 balken */
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -83,7 +79,7 @@ header {
     padding: var(--spacing-medium);
     margin-top: -15px;
 
-    /* 8 balken layout */
+    /* Projectkaart layout */
     .project-card-head {
         display: flex;
         justify-content: flex-start;
@@ -96,14 +92,14 @@ header {
         text-decoration: none;
     }
 
-    /* foto's in nav balk */
+    /* Projectfoto's in nav */
     .project-photo {
         width: auto;
         height: 60px;
         border-radius: var(--border-radius);
     }
 
-    /* titels in nav balk */
+    /* Titel in nav kaart */
     .card-title {
         padding: var(--spacing-small);
         font-size: var(--font-size-small);
@@ -113,10 +109,9 @@ header {
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    
-
 }
 
+/* Titels en subtitels */
 .main-sub-title {
     font-size: var(--font-size-small);
     font-weight: 600;
@@ -143,7 +138,7 @@ header {
     text-align: center;
 }
 
-/* titels van preview stukken */
+/* Titel preview blokken */
 .preview-title {
     padding: var(--spacing-small);
     font-size: var(--font-size-medium);
@@ -151,34 +146,39 @@ header {
     margin: 5px;
 }
 
-/* vlakken van projecten etc */
+/* MARK: Projecten - horizontale scroll */
 .projects-scroll {
     display: flex;
     overflow-x: auto;
     gap: var(--spacing-small);
     scroll-behavior: smooth;
 
-    /* vlakken van projecten layout */
+    /* Scrollbar verbergen */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Projectkaart layout */
     .project-card {
         color: var(--primary-text-color);
         text-align: left;
         margin: 10px;
     }
 
-    /* preview foto's */
+    /* Preview foto's */
     .preview-photo {
         width: auto;
         height: 180px;
     }
 
-    /* titel van project preview */
+    /* Titel van preview */
     h3 {
         font-size: var(--font-size-normal);
         font-weight: 800;
         margin: 2px;
     }
 
-    /* ondertitel project preview */
+    /* Ondertitel van preview */
     p {
         font-size: var(--font-size-small);
         font-weight: 100;
@@ -187,49 +187,45 @@ header {
     }
 }
 
+/* MARK: Media Queries */
 
-/* Voor kleinere schermen (max 768px) */
+/* Kleine schermen (max 768px) */
 @media screen and (max-width: 768px) {
     .project-photo {
-        height: 60px; /* Minimale hoogte */
+        height: 60px;
     }
 }
 
-/* Voor middelgrote schermen (min 769px en max 1024px) */
+/* Middelgrote schermen (769px - 1024px) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .projects-grid {
-        grid-template-columns: repeat(2, 1fr); /* Twee kolommen */
+        grid-template-columns: repeat(4, 1fr);
         gap: var(--spacing-medium);
     }
 
     .project-photo {
-        height: 100px; /* Middelgrote afbeelding */
+        height: 100px;
     }
 }
 
-/* Voor grote schermen (min 1025px) */
+/* Grote schermen (min 1025px) */
 @media screen and (min-width: 1025px) {
     .projects-grid {
-        display: flex; /* Zet de projecten naast elkaar */
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        gap: var(--spacing-medium); /* Houdt de gap consistent */
-        justify-content: flex-start; /* Zorgt voor gelijke verdeling */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: var(--spacing-medium);
+
     }
 
     .project-card-head {
-        flex-direction: row; /* Zet de titel en afbeelding naast elkaar */
-        align-items: center; /* Zorgt voor uitlijning in het midden */
-        gap: var(--spacing-small); /* Behoudt consistente afstand */
+        flex-direction: row;
+        align-items: center;
+        gap: var(--spacing-small);
         flex-wrap: nowrap;
     }
 
     .project-photo {
-        height: 100px; /* Maximale hoogte */
+        height: 100px;
         width: auto;
     }
 }
-
-
-
-
