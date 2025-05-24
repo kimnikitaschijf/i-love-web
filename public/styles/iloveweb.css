@@ -81,8 +81,13 @@ body {
 
     /* Kleuren */
     --primary-background-color: #121212;
-    --primary-text-color: #FFFFFF;
     --secondary-background-color: #212121;
+    --light-background-color: #f0fcea;
+
+    /* Tekst */
+    --primary-text-color: #FFFFFF;
+    --secondary-text-color: #212121;
+
 
     /* Knoppen */
     --button-active: #1EB954;
@@ -97,8 +102,21 @@ body {
 
 }
 
+/*      MARK: 404     */
+.h1404 {
+    font-size: var(--font-size-6xl);
+    justify-self: center;
+    padding-left: 5%;
+}
 
+.h2404 {
+    font-size: var(--font-size-6xl);
+    justify-self: center;
+    padding-left: 5%;
+}
 
-
-
-
+.p404 {
+    font-size: var(--font-size-lg);
+    justify-self: center;
+    padding-left: 5%;
+}

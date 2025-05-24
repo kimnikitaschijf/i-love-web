@@ -40,11 +40,6 @@ app.get('/', async function (request, response) {
   response.render('index.liquid')
 })
 
-app.get('/index2', async function (request, response) {
-  // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
-  response.render('index2.liquid')
-})
-
 app.get('/digital-garden', async function (request, response) {
   // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
   response.render('digital-garden.liquid', {files: files})
@@ -63,6 +58,10 @@ app.get('/profile', async function (request, response) {
 app.get('/learning-journal', async function (request, response) {
   // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
   response.render('learning-journal.liquid')
+})
+
+app.get('/404', async function (request, response) {
+  response.render('partials/404.liquid')
 })
 
 // app.get('/projects/:slug', async function (request, response) {
