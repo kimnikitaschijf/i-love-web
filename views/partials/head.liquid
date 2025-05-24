@@ -6,8 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I Love Web</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/iloveweb.css">
-    <link rel="icon" href="assets/site-icon.png" type="image/x-icon">
+    <link rel="icon" href="../assets/Nav-icons/site-icon.png" type="image/x-icon">
 </head>
 
 <body>
+
+    {% comment %} buttons helemaal bovenaan pagina {% endcomment %}
+
+    <header class="main-header">
+
+        {% comment %} <a href="#"><img class="profile-picture" src="../assets/Nav-icons/me.webp" alt="Afbeelding van mij" width="50"
+                height="50"></a> {% endcomment %}
+        <a href="#" class="contact-button">Contact</a>
+
+        {% comment %} nav menu {% endcomment %}
+        <nav class="menu">
+            <ul class="menu-items">
+                <li class="menu-item">
+                    <a href="./projects.liquid">
+                        <picture>
+                            <source type="image/avif" srcset="../assets/Nav-icons/projects.avif">
+                            <source type="image/webp" srcset="../assets/Nav-icons/projects.webp">
+                            <img loading="eager" src="../assets/Nav-icons/projects.png" alt="Projects" width="25"
+                                height="25" decoding="async">
+                        </picture><span class="nav-text">Projects</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <picture>
+                            <source type="image/avif" srcset="../assets/Nav-icons/journal.avif">
+                            <source type="image/webp" srcset="../assets/Nav-icons/journal.webp">
+                            <img loading="eager" src="../assets/Nav-icons/journal.png" alt="Journal" width="25"
+                                height="25" decoding="async">
+                        </picture><span class="nav-text">Learing Journal</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <picture>
+                            <source type="image/avif" srcset="../assets/Nav-icons/garden.avif">
+                            <source type="image/webp" srcset="../assets/Nav-icons/garden.webp">
+                            <img loading="eager" src="../assets/Nav-icons/garden.png" alt="Garden" width="25"
+                                height="25" decoding="async">
+                        </picture><span class="nav-text">Digital garden</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <picture>
+                            <source type="image/avif" srcset="../assets/Nav-icons/profile.avif">
+                            <source type="image/webp" srcset="../assets/Nav-icons/profile.webp">
+                            <img loading="eager" src="../assets/Nav-icons/profile.png" alt="Profile" width="25"
+                                height="25" decoding="async">
+                        </picture><span class="nav-text">Profile</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>

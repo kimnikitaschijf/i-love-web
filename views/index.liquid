@@ -1,133 +1,28 @@
 {% render 'partials/head.liquid' %}
 
-<header>
-
-    {% comment %} MARK: nav buttons {% endcomment %}
-
-    {% comment %} buttons helemaal bovenaan pagina {% endcomment %}
-    <div class="profile-buttons">
-        <a href="./index.liquid">
-            <img class="profile-picture" src="assets/me.webp" alt="Afbeelding van mij" width="40" height="40">
-        </a>
-        <button class="contact-button">Contact</button>
+{% comment %} intro section {% endcomment %}
+<section class="intro-section">
+    <div class="intro-content">
+        <h1 class="main-title">Welcome to my<br><strong>I 💚 web</strong></h1>
+        <p class="about-us-text">
+            I'm <strong>Kim Nikita Schijf</strong>, 20 years old, from <strong>Heerhugowaard</strong>. I'm a first-year
+            <strong>FDND student</strong> at the Amsterdam University of Applied Sciences (HvA), and this site is where
+            I share everything I'm working on.
+            You’ll find my school <strong>projects</strong>, little <strong>digital</strong> experiments,
+            <strong>notes</strong> about things I’ve learned, and a bit about
+            <strong>me</strong> too.
+            <br>
+            <br>
+            I’m still learning (a lot), so this site will probably keep changing as I go. Feel free to
+            <strong>click</strong> around and
+            check things out!
+        </p>
     </div>
-
-    <nav class="horizontal-scroll-nav">
-            <a href="./index.liquid" class="nav-button">Home</a>
-            <a href="./projects.liquid" class="nav-button">Projects</a>
-            <a href="#" class="nav-button">Learning Journal</a>
-            <a href="./digital-garden.liquid" class="nav-button">Digital Garden</a>
-        </nav> 
-
-</header>
-
-
-{% comment %} MARK: recent projects {% endcomment %}
-
-<h1 class="main-sub-title">My latest projects</h1>
-
-{% comment %} containers nav cards {% endcomment %}
-
-<section class="projects-grid">
-    {% comment %} september {% endcomment %}
-    <a href="#" class="project-card-head">
-        <picture>
-            <source type="image/avif" srcset="../assets/Month-pictures/september-cover.avif">
-            <source type="image/webp" srcset="../assets/Month-pictures/september-cover.webp">
-            <img loading="eager" src="../assets/Month-pictures/september-cover.png" alt="Profile card" width="50"
-                height="50" decoding="async">
-        </picture>
-        <h2 class="card-title">Profile card</h2 class="card-title">
-    </a>
-
-    {% comment %} oktober {% endcomment %}
-    <a href="#" class="project-card-head">
-        <picture>
-            <source type="image/avif" srcset="../assets/Month-pictures/october-cover.avif">
-            <source type="image/webp" srcset="../assets/Month-pictures/october-cover.webp">
-            <img loading="eager" src="../assets/Month-pictures/october-cover.png" alt="Squad page" width="50"
-                height="50" decoding="async">
-        </picture>
-        <h2 class="card-title">Squad page</h2 class="card-title">
-    </a>
-
-    {% comment %} november {% endcomment %}
-    <a href="#" class="project-card-head">
-        <picture>
-            <source type="image/avif" srcset="../assets/Month-pictures/november-cover.avif">
-            <source type="image/webp" srcset="../assets/Month-pictures/november-cover.webp">
-            <img loading="eager" src="../assets/Month-pictures/november-cover.png" alt="Bieb in bloei" width="50"
-                height="50" decoding="async">
-        </picture>
-        <h2 class="card-title">Bieb in Bloei</h2 class="card-title">
-    </a>
-
-    {% comment %} december {% endcomment %}
-    <a href="#" class="project-card-head">
-        <picture>
-            <source type="image/avif" srcset="../assets/Month-pictures/december-cover.avif">
-            <source type="image/webp" srcset="../assets/Month-pictures/december-cover.webp">
-            <img loading="eager" src="../assets/Month-pictures/december-cover.png" alt="UI Events" width="50"
-                height="50" decoding="async">
-        </picture>
-        <h2 class="card-title">UI Events</h2 class="card-title">
-    </a>
-
-    {% comment %} january {% endcomment %}
-    <a href="#" class="project-card-head">
-        <picture>
-            <source type="image/avif" srcset="../assets/Month-pictures/january-cover.avif">
-            <source type="image/webp" srcset="../assets/Month-pictures/january-cover.webp">
-            <img loading="eager" src="../assets/Month-pictures/january-cover.png" alt="Active collective" width="50"
-                height="50" decoding="async">
-        </picture>
-        <h2 class="card-title">Active Collective</h2 class="card-title">
-    </a>
-
-    {% comment %} february {% endcomment %}
-    <a href="#" class="project-card-head">
-        <picture>
-            <source type="image/avif" srcset="../assets/Month-pictures/february-cover.avif">
-            <source type="image/webp" srcset="../assets/Month-pictures/february-cover.webp">
-            <img loading="eager" src="../assets/Month-pictures/february-cover.png" alt="Squad page 2.0" width="50"
-                height="50" decoding="async">
-        </picture>
-        <h2 class="card-title">Squad page 2.0</h2 class="card-title">
-    </a>
-
-    {% comment %} march {% endcomment %}
-    <a href="#" class="project-card-head">
-        <picture>
-            <source type="image/avif" srcset="../assets/Month-pictures/march-cover.avif">
-            <source type="image/webp" srcset="../assets/Month-pictures/march-cover.webp">
-            <img loading="eager" src="../assets/Month-pictures/march-cover.png" alt="Oncollaboration" width="50"
-                height="50" decoding="async">
-        </picture>
-        <h2 class="card-title">Oncollaboration</h2 class="card-title">
-    </a>
-
-    {% comment %} I love web {% endcomment %}
-    <a href="#" class="project-card-head">
-        <picture>
-            <source type="image/avif" srcset="../assets/Month-pictures/writing-cover.avif">
-            <source type="image/webp" srcset="../assets/Month-pictures/writing-cover.webp">
-            <img loading="eager" src="../assets/Month-pictures/writing-cover.png" alt="We love web" width="50"
-                height="50" decoding="async">
-        </picture>
-        <h2 class="card-title">We ♥ web</h2 class="card-title">
-    </a>
 </section>
 
-<p class="main-sub-title">More fun things & facts about me</p>
-
-
-{% comment %} MARK: favorites {% endcomment %}
-
-
+{% comment %} favorites section {% endcomment %}
 <h2 class="preview-title">Favorites</h2>
 <p class="sub-title">Some of my favorite things</p>
-
-{% comment %} projects scroll preview container {% endcomment %}
 
 {% comment %} Movies {% endcomment %}
 <section class="projects-scroll">

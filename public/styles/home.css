@@ -1,0 +1,129 @@
+/* Body achtergrond */
+body {
+    background-color: var(--primary-background-color);
+}
+
+.intro-section {
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    /* animation: fadeInUp 0.6s ease-out; */
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    /* animation: slideIn 1s ease forwards; */
+}
+
+strong {
+    color: var(--button-active);
+}
+
+.main-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    margin: 1rem;
+    line-height: 1.5;
+}
+
+.about-us-text {
+    font-size: 1rem;
+    color: var(--primary-text-color);
+    margin-bottom: 2.5rem;
+    padding: 0 1rem;
+    line-height: 1.7rem;
+}
+
+
+/* Titels en subtitels */
+.main-sub-title {
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    margin-top: 0px;
+    opacity: 80%;
+    padding-inline-start: 20px;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: var(--font-size-small);
+    font-weight: 100;
+    margin-top: 0px;
+    opacity: 70%;
+    padding-left: 10px;
+}
+
+.extra-sub-title {
+    font-size: var(--font-size-small);
+    font-weight: 100;
+    margin-top: 0px;
+    opacity: 60%;
+    padding: 0px 15px;
+    text-align: center;
+}
+
+/* Titel preview blokken */
+.preview-title {
+    padding: var(--spacing-small);
+    font-size: var(--font-size-medium);
+    font-weight: 600;
+    margin: 5px;
+}
+
+/* MARK: Projecten - horizontale scroll */
+.projects-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: var(--spacing-small);
+    scroll-behavior: smooth;
+
+    /* Scrollbar verbergen */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Projectkaart layout */
+    .project-card {
+        color: var(--primary-text-color);
+        text-align: left;
+        margin: 10px;
+    }
+
+    /* Preview foto's */
+    .preview-photo {
+        width: auto;
+        height: 180px;
+    }
+
+    /* Titel van preview */
+    h3 {
+        font-size: var(--font-size-normal);
+        font-weight: 800;
+        margin: 2px;
+    }
+
+    /* Ondertitel van preview */
+    p {
+        font-size: var(--font-size-small);
+        font-weight: 100;
+        margin-top: 10px;
+        opacity: 70%;
+    }
+}
+
+/* Middelgrote schermen (769px - 1020px) */
+@media screen and (min-width: 769px) and (max-width: 1004px) {
+    .projects-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-medium);
+    }
+
+    .project-photo {
+        height: 100px;
+    }
+}
+
+
+
