@@ -2,15 +2,16 @@
 
 {% comment %} intro section {% endcomment %}
 <section class="intro-section">
-    <div>
+    <div class="stripe-background">
         <picture>
             <source type="image/avif" srcset="../assets/main-picture-me.avif">
             <source type="image/webp" srcset="../assets/main-picture-me.webp">
-            <img loading="eager" src="../assets/main-picture-me.png" class="home-main-image" alt="Kim Nikita Schijf" height="300" width="200" decoding="async">
+            <img loading="eager" src="../assets/main-picture-me.png" class="home-main-image" alt="Kim Nikita Schijf"
+                height="300" width="200" decoding="async">
         </picture>
     </div>
     <div class="intro-content">
-        <h1 class="main-title">Welcome to my<br><strong>I 💚 web</strong></h1>
+        <h1 class="main-title">Welcome to my I love web</h1>
         <p class="about-us-text">
             I'm <strong>Kim Nikita Schijf</strong>, 20 years old, from <strong>Heerhugowaard</strong>. I'm a first-year
             <strong>FDND student</strong> at the Amsterdam University of Applied Sciences (HvA), and this site is where
@@ -23,272 +24,20 @@
             I’m still learning (a lot), so this site will probably keep changing as I go. Feel free to
             <strong>click</strong> around and check things out!
         </p>
-        <a href="./profile.liquid" class="read-more-button">Read more about me!</a>
+        <a href="/profile" class="read-more-button">Read more about me!</a>
     </div>
 </section>
 
+
+
+
+
+
 {% comment %} favorites section {% endcomment %}
-<h2 class="preview-title">Favorites</h2>
-<p class="sub-title">Some of my favorite things</p>
+<section class="projects-grid">
+    <h2>Favorites</h2>
 
-{% comment %} Movies {% endcomment %}
-<section class="projects-scroll">
-    <article class="project-card">
-        <picture>
-            <source type="image/avif" srcset="../assets/Favorites-pictures/movie-quotes.avif">
-            <source type="image/webp" srcset="../assets/Favorites-pictures/movie-quotes.webp">
-            <img loading="lazy" src="../assets/Favorites-pictures/movie-quotes.png" alt="Movies" width="200"
-                height="200" decoding="async">
-        </picture>
-        <div class="preview-text">
-            <h3>Movies</h3>
-            <p>All time favorites ♡</p>
-        </div>
-    </article>
-
-    {% comment %} Series {% endcomment %}
-    <article class="project-card">
-        <picture>
-            <source type="image/avif" srcset="../assets/Favorites-pictures/series-quotes.avif">
-            <source type="image/webp" srcset="../assets/Favorites-pictures/series-quotes.webp">
-            <img loading="lazy" src="../assets/Favorites-pictures/series-quotes.png" alt="Series" width="200"
-                height="200" decoding="async">
-        </picture>
-        <div class="preview-text">
-            <h3>Series</h3>
-            <p>Rewatched these a LOT!</p>
-        </div>
-    </article>
-
-    {% comment %} Artists {% endcomment %}
-    <article class="project-card">
-        <picture>
-            <source type="image/avif" srcset="../assets/Favorites-pictures/artists-quotes.avif">
-            <source type="image/webp" srcset="../assets/Favorites-pictures/artists-quotes.webp">
-            <img loading="lazy" src="../assets/Favorites-pictures/artists-quotes.png" alt="Artists" width="200"
-                height="200" decoding="async">
-        </picture>
-        <div class="preview-text">
-            <h3>Artists</h3>
-            <p>Saw most of them live ★</p>
-        </div>
-    </article>
-
-    {% comment %} Books {% endcomment %}
-    <article class="project-card">
-        <picture>
-            <source type="image/avif" srcset="../assets/Favorites-pictures/book-quotes.avif">
-            <source type="image/webp" srcset="../assets/Favorites-pictures/book-quotes.webp">
-            <img loading="lazy" src="../assets/Favorites-pictures/book-quotes.png" alt="Books" width="200" height="200"
-                decoding="async">
-        </picture>
-        <div class="preview-text">
-            <h3>Books</h3>
-            <p>Could not put these down...</p>
-        </div>
-    </article>
-
-    {% comment %} Characters {% endcomment %}
-    <article class="project-card">
-        <picture>
-            <source type="image/avif" srcset="../assets/Favorites-pictures/character-quotes.avif">
-            <source type="image/webp" srcset="../assets/Favorites-pictures/character-quotes.webp">
-            <img loading="lazy" src="../assets/Favorites-pictures/character-quotes.png" alt="Characters" width="200"
-                height="200" decoding="async">
-        </picture>
-        <div class="preview-text">
-            <h3>Characters</h3>
-            <p>Just my favorites ◡̈</p>
-        </div>
-    </article>
-
-    {% comment %} <article class="project-card">
-        <div>
-            <img loading="lazy" class="preview-photo" src="assets/stock.webp" alt="...">
-        </div>
-        <div class="preview-text">
-            <h3>Title project</h3>
-            <p>Creator name</p>
-        </div>
-    </article> {% endcomment %}
 
 </section>
-
-
-
-{% comment %} MARK: concerts {% endcomment %}
-
-
-<h2 class="preview-title">Concerts</h2>
-<p class="sub-title">A few concerts I've attended ⬇️</p>
-
-
-{% comment %} concerts scroll preview container {% endcomment %}
-
-<section class="projects-scroll">
-
-    {% comment %} NF {% endcomment %}
-    <article class="project-card">
-        <picture>
-            <source type="image/avif" srcset="../assets/Concerts-pictures/nf-cover.avif">
-            <source type="image/webp" srcset="../assets/Concerts-pictures/nf-cover.webp">
-            <img loading="lazy" src="../assets/Concerts-pictures/nf-cover.png" alt="NF" width="200" height="200"
-                decoding="async">
-        </picture>
-        <div class="preview-text">
-            <h3>NF</h3>
-            <p>AFAS Live - 30/09/2023</p>
-        </div>
-    </article>
-
-    {% comment %} 5SOS {% endcomment %}
-    <article class="project-card">
-        <picture>
-            <source type="image/avif" srcset="../assets/Concerts-pictures/5sos-cover.avif">
-            <source type="image/webp" srcset="../assets/Concerts-pictures/5sos-cover.webp">
-            <img loading="lazy" src="../assets/Concerts-pictures/5sos-cover.png" alt="5 Seconds of summer" width="200"
-                height="200" decoding="async">
-        </picture>
-        <div class="preview-text">
-            <h3>5 seconds of summer</h3>
-            <p>Ziggo Dome - 1/10/2023</p>
-        </div>
-    </article>
-
-    {% comment %} Tom Odell {% endcomment %}
-    <article class="project-card">
-        <picture>
-            <source type="image/avif" srcset="../assets/Concerts-pictures/tom-odell-cover.avif">
-            <source type="image/webp" srcset="../assets/Concerts-pictures/tom-odell-cover.webp">
-            <img loading="lazy" src="../assets/Concerts-pictures/tom-odell-cover.png" alt="Tom Odell" width="200"
-                height="200" decoding="async">
-        </picture>
-        <div class="preview-text">
-            <h3>Tom Odell</h3>
-            <p>Ziggo Dome - 02/07/2024</p>
-        </div>
-    </article>
-
-    {% comment %} Taylor Swift N2 {% endcomment %}
-    <article class="project-card">
-        <picture>
-            <source type="image/avif" srcset="../assets/Concerts-pictures/taylor-cover-1.avif">
-            <source type="image/webp" srcset="../assets/Concerts-pictures/taylor-cover-1.webp">
-            <img loading="lazy" src="../assets/Concerts-pictures/taylor-cover-1.png" alt="Taylor Swift N2" width="200"
-                height="200" decoding="async">
-        </picture>
-        <div class="preview-text">
-            <h3>Taylor Swift - The Eras Tour</h3>
-            <p>N2 - Johan Cruijff ArenA - 05/07/2024</p>
-        </div>
-    </article>
-
-    {% comment %} Taylor Swift N3 {% endcomment %}
-    <article class="project-card">
-        <picture>
-            <source type="image/avif" srcset="../assets/Concerts-pictures/taylor-cover-2.avif">
-            <source type="image/webp" srcset="../assets/Concerts-pictures/taylor-cover-2.webp">
-            <img loading="lazy" src="../assets/Concerts-pictures/taylor-cover-2.png" alt="Taylor Swift N3" width="200"
-                height="200" decoding="async">
-        </picture>
-        <div class="preview-text">
-            <h3>Taylor Swift - The Eras Tour</h3>
-            <p>N3 - Johan Cruijff ArenA - 06/07/2024</p>
-        </div>
-    </article>
-
-    {% comment %} Suus & Freek {% endcomment %}
-    <article class="project-card">
-        <picture>
-            <source type="image/avif" srcset="../assets/Concerts-pictures/suzan-en-freek-cover.avif">
-            <source type="image/webp" srcset="../assets/Concerts-pictures/suzan-en-freek-cover.webp">
-            <img loading="lazy" src="../assets/Concerts-pictures/suzan-en-freek-cover.png" alt="Suzan & Freek"
-                width="200" height="200" decoding="async">
-        </picture>
-        <div class="preview-text">
-            <h3>Suzan & Freek</h3>
-            <p>Caprera Bloemendaal - 10/09/2024
-    </article>
-
-    {% comment %} Omar Rudberg {% endcomment %}
-    <article class="project-card">
-        <picture>
-            <source type="image/avif" srcset="../assets/Concerts-pictures/omar-cover.avif">
-            <source type="image/webp" srcset="../assets/Concerts-pictures/omar-cover.webp">
-            <img loading="lazy" src="../assets/Concerts-pictures/omar-cover.png" alt="Omar Rudberg" width="200"
-                height="200" decoding="async">
-        </picture>
-        <div class="preview-text">
-            <h3>Omar Rudberg</h3>
-            <p>Melkweg - 24/10/2024</p>
-        </div>
-    </article>
-
-    {% comment %} C.A.S {% endcomment %}
-    <article class="project-card">
-        <picture>
-            <source type="image/avif" srcset="../assets/Concerts-pictures/C-A-S-cover.avif">
-            <source type="image/webp" srcset="../assets/Concerts-pictures/C-A-S-cover.webp">
-            <img loading="lazy" src="../assets/Concerts-pictures/C-A-S-cover.png" alt="Cigarettes after sex" width="200"
-                height="200" decoding="async">
-        </picture>
-        <div class="preview-text">
-            <h3>Cigarettes after sex</h3>
-            <p>Ziggo Dome - 28/10/2024</p>
-        </div>
-    </article>
-
-    {% comment %} Conan Gray {% endcomment %}
-    <article class="project-card">
-        <picture>
-            <source type="image/avif" srcset="../assets/Concerts-pictures/conan-gray-cover.avif">
-            <source type="image/webp" srcset="../assets/Concerts-pictures/conan-gray-cover.webp">
-            <img loading="lazy" src="../assets/Concerts-pictures/conan-gray-cover.png" alt="Conan Gray" width="200"
-                height="200" decoding="async">
-        </picture>
-        <div class="preview-text">
-            <h3>Conan Gray</h3>
-            <p>AFAS Live - 02/11/2024</p>
-        </div>
-    </article>
-
-    {% comment %} Gracie Abrams {% endcomment %}
-    <article class="project-card">
-        <picture>
-            <source type="image/avif" srcset="../assets/Concerts-pictures/gracie-cover.avif">
-            <source type="image/webp" srcset="../assets/Concerts-pictures/gracie-cover.webp">
-            <img loading="lazy" src="../assets/Concerts-pictures/gracie-cover.png" alt="Gracie Abrams" width="200"
-                height="200" decoding="async">
-        </picture>
-        <div class="preview-text">
-            <h3>Gracie Abrams</h3>
-            <p>Ziggo Dome - 17/02/2025</p>
-        </div>
-    </article>
-</section>
-
-
-
-{% comment %} MARK: memes {% endcomment %}
-
-
-
-{% comment %} memes scroll preview container {% endcomment %}
-
-<h2 class="preview-title">Memes</h2>
-<p class="sub-title">My all time favorite memes ⬇️</p>
-
-
-{% comment %} <section class="projects-scroll">
-    <article class="project-card">
-        <div>
-            <img loading="lazy" class="preview-photo" src="assets/stock.webp" alt="...">
-        </div>
-        <div class="preview-text">
-            <h3>Title project</h3>
-            <p>Creator name</p>
-        </div>
-    </article>
-</section> {% endcomment %}
 
 {% render 'partials/foot.liquid' %}

@@ -7,7 +7,7 @@
         position: sticky;
         z-index: 99;
         top: 0;
-        background-color: var(--secondary-background-color);
+        background-color: var(--primary-menu-color);
         border-radius: var(--border-radius-menu);
         display: flex;
         align-items: center;
@@ -22,13 +22,23 @@
             display: block;
             font-size: 1rem;
             margin-left: auto;
-            background: transparent;
-            border: 2px solid var(--button-active);
+            background: var(--button-color);
             padding: var(--spacing-small) var(--spacing-medium);
+            border: 2px solid var(--button-hover);
             color: var(--primary-text-color);
             border-radius: var(--border-radius-button);
             text-decoration: none;
             align-self: anchor-center;
+
+            &:hover {
+                color: var(--button-color);
+                background-color: var(--button-hover);
+                transition: .2s ease-in-out;
+            }
+
+            &:active {
+                background-color: var(--button-active);
+            }
         }
     }
 
@@ -36,7 +46,7 @@
         position: fixed;
         z-index: 99;
         bottom: 0;
-        background-color: var(--secondary-background-color);
+        background-color: var(--primary-menu-color);
         border-radius: var(--border-radius-footer);
         width: 100%;
         padding: 0 0.75rem;
@@ -77,16 +87,15 @@
                     align-items: center;
                     font-size: 1rem;
                     text-decoration: none;
-                    color: var(--primary-text-color);
+                    color: var(--alt-text-color);
                     transition: 0.2s ease-in-out;
 
                     @media screen and (min-width: 1020px) {
-                        color: var(--primary-text-color);
-
+                        color: var(--alt-text-color);
                     }
 
                     &:hover {
-                        color: var(--primary-highlight);
+                        color: var(--primary-highlight-color);
                         transition: 0.2s ease-in-out;
                     }
 
