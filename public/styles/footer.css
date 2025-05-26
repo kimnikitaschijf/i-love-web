@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    background-color: var(--primary-menu-color);
+    border-radius: 1em 1em 0 0;
+    padding: 3em 1em 2em 1em;
+    color: var(--alt-text-color);
+    margin: 0 0 4em 0;
+
+    @media screen and (min-width: 720px) {
+        padding: 2em 3em;
+        margin: 0;
+    }
+
+    h4 {
+        margin: 0;
+        font-family: var(--heading-font);
+    }
+
+    p {
+        line-height: 25px;
+        font-size: var(--font-size-small);
+    }
+
+    a {
+        color: var(--alt-text-color);
+        text-decoration: none;
+        transition: .2s ease-in-out;
+        font-size: var(--font-size-small);
+
+
+        &:hover {
+            color: var(--primary-highlight-color);
+            transition: .2s ease-in-out;
+        }
+    }
+
+    .wrapper-footer {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-large);
+
+        @media screen and (min-width: 720px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .about-footer,
+        .navigation-footer,
+        .contact-footer {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-medium);
+        }
+
+        .about-footer {
+            @media screen and (min-width: 720px) {
+                width: 30%;
+            }
+
+            .wrapper-logo-footer {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+        }
+
+        .navigation-footer ul,
+        .contact-footer ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-small);
+        }
+
+        .contact-footer ul li,
+        a {
+            font-size: var(--font-size-small);
+            display: flex;
+            gap: var(--spacing-small);
+        }
+    }
+
+    .divider-footer {
+        height: 1px;
+        width: 100%;
+        background-color: var(--primary-highlight-color);
+    }
+
+    .legal-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: var(--spacing-medium);
+
+        .legal-links {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-small);
+        }
+    }
+}

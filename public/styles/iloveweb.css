@@ -13,8 +13,6 @@
 }
 
 body {
-    font-family: var(--site-font);
-    color: var(--primary-text-color);
     margin: 0;
     padding: 0;
 }
@@ -28,66 +26,39 @@ body {
     /* Typografie
 
     /* Lettertypefamilies */
-    --heading-font: "Fleur De Leah", cursive;
-    /* Voor titels */
+    --heading-font: "Petit Formal Script", cursive;
     --site-font: 'Roboto', sans-serif;
-    /* Voor lopende tekst */
 
-
-
-    /* Basis Fontgroottes (mobiel standaard) */
-    --font-size-huge: 2.5rem;
-    /* Voor grote titels */
-    --font-size-large: 2rem;
-    /* Voor sectie-titels */
-    --font-size-medium: 1.5rem;
-    /* Voor subtitels */
-    --font-size-normal: 1rem;
-    /* Voor paragrafen */
-    --font-size-small: 0.875rem;
-    /* Voor kleinere tekst */
-    --font-size-xsmall: 0.780rem;
-    /* Voor buttons */
+    /* Font sizes */
+    --font-size-huge: clamp(1.75rem, 3vw + 0.5rem, 2.5rem);
+    /* ~28–40px */
+    --font-size-large: clamp(1.5rem, 2.5vw + 0.25rem, 2rem);
+    /* ~24–32px */
+    --font-size-medium: clamp(1.25rem, 2vw + 0.25rem, 1.75rem);
+    /* ~20–28px */
+    --font-size-normal: clamp(1rem, 1.5vw + 0.25rem, 1.25rem);
+    /* ~16–20px */
+    --font-size-small: clamp(1rem, 1vw + 0.25rem, 1.125rem);
+    /* ~16–18px */
+    --font-size-xsmall: clamp(1rem, 0.75vw + 0.25rem, 1rem);
+    /* ~16px vast */
     --font-size-menu: var(--font-size-normal);
-    /* Voor navigatie */
 
-    /* Fontgroottes (tablet) */
-    --font-size-huge-tablet: 3rem;
-    --font-size-large-tablet: 2.5rem;
-    --font-size-medium-tablet: 1.8rem;
-    --font-size-normal-tablet: 1.1rem;
-    --font-size-small-tablet: 0.9rem;
-
-    /* Fontgroottes (desktop) */
-    --font-size-huge-desktop: 4rem;
-    --font-size-large-desktop: 3rem;
-    --font-size-medium-desktop: 2rem;
-    --font-size-normal-desktop: 1.2rem;
-    --font-size-small-desktop: 1rem;
-
-    /* Lijnhoogtes */
+    /* Line heights */
     --line-height-huge: 1.2;
     --line-height-large: 1.4;
     --line-height-medium: 1.6;
     --line-height-normal: 1.8;
     --line-height-small: 1.4;
 
-    /* Responsive marges (optioneel, voor consistentie) */
+    /* Spacing */
     --spacing-small: 0.5rem;
     --spacing-medium: 1rem;
     --spacing-large: 2rem;
     --spacing-huge: 3rem;
 
-
-
-
-
-
-
-
-
     /* MARK: Kleuren */
-    --primary-background-color: #FAF4E6;
+    --primary-background-color: #fefaf2;
     --secondary-background-color: #A95B35;
     --light-background-color: #E49F7E;
 
@@ -97,7 +68,7 @@ body {
     --primary-text-color: #5A7FBE;
     --secondary-text-color: #A95B35;
     --third-text-color: #7C7719;
-    --alt-text-color: #FAF4E6;
+    --alt-text-color: #fefaf2;
 
     --primary-highlight-color: #c3c2ac;
 

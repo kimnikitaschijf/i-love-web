@@ -1,6 +1,8 @@
-/* Body achtergrond */
 body {
     background-color: var(--primary-background-color);
+    font-family: var(--site-font);
+    font-size: var(--font-size-normal);
+    line-height: var(--line-height-normal);
 }
 
 /* section */
@@ -18,18 +20,14 @@ body {
                 var(--primary-background-color) 15px,
                 var(--button-active) 15px,
                 var(--button-active) 30px);
-        padding: 4rem 5.5rem;
-        margin: 0rem;
-
+        padding: var(--spacing-huge);
+        margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        /* border-bottom: 2px solid var(--button-hover); */
-        /* border-right: 3px solid var(--button-hover); */
-        /* border: 3px solid var(--button-hover); */
 
         @media screen and (min-width: 720px) {
-            margin: 0rem 2rem 0rem 0rem;
+            margin: 0 var(--spacing-large) 0 0;
         }
 
         @media screen and (min-width: 1020px) {
@@ -37,59 +35,49 @@ body {
         }
     }
 
-    /* picture img */
     .home-main-image {
         width: 250px;
         height: auto;
         border-radius: var(--border-radius);
-        /* border: 3px solid var(--secondary-text-color); */
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 
         @media screen and (min-width: 720px) {
             width: 400px;
-            height: auto;
         }
     }
 
-    /* div */
     .intro-content {
         max-width: 700px;
-        margin: 0 auto;
-        margin-bottom: 3rem;
+        margin: 0 auto var(--spacing-huge);
 
-        /* h1 */
         .main-title {
             font-family: var(--heading-font);
-            font-size: 2rem;
+            font-size: var(--font-size-huge);
             font-weight: bold;
             color: var(--secondary-text-color);
-            margin: 1rem;
-            line-height: 1.5;
-
-            @media screen and (min-width: 720px) {
-                font-size: 3rem;
-            }
+            margin: var(--spacing-large);
+            line-height: var(--line-height-large);
         }
 
-        /* p */
         .about-us-text {
-            font-size: 1rem;
+            font-size: var(--font-size-small);
+            font-family: var(--site-font);
             color: var(--secondary-text-color);
-            margin-bottom: 2.5rem;
-            padding: 0 1rem;
-            line-height: 1.9rem;
+            margin-bottom: calc(var(--spacing-large) + 0.5rem);
+            padding: 0 var(--spacing-medium);
+            line-height: var(--line-height-normal);
         }
 
-        /* a */
         .read-more-button {
+            font-size: var(--font-size-xsmall);
+            font-family: var(--site-font);
             color: var(--button-active);
             background-color: var(--button-color);
             border: 2px solid var(--button-active);
-            padding: 1rem;
+            padding: var(--spacing-medium);
             border-radius: var(--border-radius-button);
             text-decoration: none;
-            margin-top: 1rem;
-            align-self: anchor-center;
+            margin-top: var(--spacing-medium);
 
             &:hover {
                 color: var(--button-color);
@@ -106,11 +94,11 @@ body {
 }
 
 /* section */
-.card-section {
+.subject-card-section {
     background: var(--secondary-background-color);
+    padding-bottom: var(--spacing-medium);
 
-    /* h2 */
-    h2 {
+    .subject-title {
         background-color: var(--light-background-color);
         padding: 0.75rem;
         margin: 0;
@@ -121,49 +109,99 @@ body {
     }
 }
 
-/* div */
 .subject-cards {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 2rem;
-    gap: 1rem;
+    margin: var(--spacing-large);
+    gap: var(--spacing-large);
 
     @media screen and (min-width: 720px) {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        margin: 1.5rem;
     }
 
     @media screen and (min-width: 1020px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin: 2rem;
-        gap: 2rem;
+        margin: var(--spacing-huge);
+        gap: var(--spacing-huge);
     }
 }
 
-/* article */
 .subject-card-layout {
     background-color: var(--primary-background-color);
-    padding: 1rem;
+    padding: var(--spacing-medium);
     border-radius: var(--border-radius);
 
-    /* h3 */
     h3 {
         color: var(--third-text-color);
         font-family: var(--heading-font);
         font-size: var(--font-size-medium);
 
         @media screen and (min-width: 720px) {
-            font-size: var(--font-size-large);
+            font-size: var(--font-size-medium);
         }
     }
 
-    /* p */
     p {
         color: var(--third-text-color);
-        line-height: 1.7rem;
+        font-size: var(--font-size-small);
+        line-height: var(--line-height-normal);
+        font-family: var(--site-font);
+    }
+}
+
+/* section */
+.contact-card-section {
+    margin: var(--spacing-medium) 0;
+    padding-bottom: var(--spacing-huge);
+
+    .contact-title {
+        margin: var(--spacing-large) var(--spacing-medium);
+        font-family: var(--heading-font);
+        font-size: var(--font-size-large);
+        font-weight: 600;
+        color: var(--secondary-text-color);
+        text-align: center;
+    }
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: var(--spacing-large);
+    gap: var(--spacing-large);
+
+    @media screen and (min-width: 720px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding-bottom: 2rem;
+    }
+
+    @media screen and (min-width: 1020px) {
+        margin: var(--spacing-huge);
+        gap: var(--spacing-huge);
+    }
+}
+
+.contact-card-layout {
+    background-color: var(--button-color);
+    border: 2px solid var(--button-hover);
+    padding: var(--spacing-medium);
+    border-radius: var(--border-radius);
+
+    h3 {
+        color: var(--primary-text-color);
+        font-family: var(--heading-font);
+        font-size: var(--font-size-medium);
+
+        @media screen and (min-width: 720px) {
+            font-size: var(--font-size-medium);
+        }
+    }
+
+    p {
+        color: var(--primary-text-color);
+        font-size: var(--font-size-small);
+        line-height: var(--line-height-normal);
+        font-family: var(--site-font);
     }
 }

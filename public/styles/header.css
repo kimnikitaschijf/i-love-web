@@ -59,8 +59,6 @@
             padding: 0;
         }
 
-
-
         .menu-items {
             display: flex;
             justify-content: space-between;
@@ -133,3 +131,29 @@
         }
     }
 }
+
+/* 
+.nav-logo-mobile {
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-menu-color);
+    width: 100%;
+    padding: 2rem 2rem 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 1rem 1rem;
+
+    @media screen and (min-width: 1020px) {
+        display: none;
+    }
+
+    img {
+        width: 8rem;
+        height: auto;
+    }
+}
+
+.uitbeeld .menu {
+    translate: 0 0%;
+} */
