@@ -99,12 +99,12 @@ body {
     padding-bottom: var(--spacing-medium);
 
     .subject-title {
-        background-color: var(--secondary-background-color);
+        background-color: var(--primary-highlight-color);
         padding: 0.75rem;
         margin: 0;
-        font-size: var(--font-size-small);
+        font-size: var(--font-size-normal);
         font-weight: 400;
-        color: var(--primary-text-color);
+        color: var(--button-alt);
         text-align: center;
     }
 }

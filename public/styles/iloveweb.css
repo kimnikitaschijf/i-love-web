@@ -46,37 +46,45 @@ body {
 
     /* MARK: Achtergrondkleuren */
     --primary-background-color: #ffffff;
-    /* helder wit voor hoofdachtergrond */
-    --secondary-background-color: #eeeeee;
-    /* lichtgrijs voor subtiele secties */
-    --light-background-color: #ffe8f0;
-    /* zacht roze vlak voor nuance */
+    /* helder wit */
+    --secondary-background-color: #e9f0ea;
+    /* licht frisse saliegroen */
+    --light-background-color: #cfe2d0;
+    /* zachte, frisse saliegroen */
 
     /* MARK: Navigatie/menu kleur */
-    --primary-menu-color: #ff6ca5;
-    /* intens fuchsia roze – opvallend en stijlvol */
+    --primary-menu-color: #6b8a6a;
+    /* medium saliegroen – goed zichtbaar, professioneel */
 
     /* MARK: Tekstkleuren */
-    --primary-text-color: #000000;
-    /* strak zwart voor optimale leesbaarheid */
-    --secondary-text-color: #222222;
-    /* iets lichter zwart voor subtiele hiërarchie */
-    --third-text-color: #5c1a3b;
-    /* diepe wijnroze voor typografie-accenten */
+    --primary-text-color: #1f1f1f;
+    /* bijna zwart voor maximale leesbaarheid */
+    --secondary-text-color: #3f4b44;
+    /* donker grijsgroen voor hiërarchie */
+    --third-text-color: #5a6b5c;
+    /* medium grijsgroen, subtiel en zacht */
     --alt-text-color: #ffffff;
-    /* wit voor tekst op gekleurde achtergronden */
+    /* wit op donkere vlakken */
 
     /* MARK: Accent / highlight */
-    --primary-highlight-color: #e93275;
-    /* krachtige neon-magenta roze */
+    --primary-highlight-color: #f4a9bb;
+    /* warm babyroze – uitnodigend en levendig */
+    --secondary-highlight-color: #fde9ee;
+    /* licht pastelroze voor achtergronden */
+    --highlight-surface-violet: #f9f3f7;
+    /* lichte lavendel-roze tint als vlak */
+    --highlight-surface-pink: #fff5f7;
+    /* subtiel roze achtergrondvlak */
 
     /* MARK: Knoppen */
-    --button-color: #ffe8f0;
-    /* verzadigde roze knopkleur */
-    --button-hover: #ff91bd;
-    /* dieproze hoverkleur */
-    --button-active: #ff2977;
-    /* donkere fuchsia voor actieve status */
+    --button-color: #ffdde5;
+    /* levendige babyroze knopkleur */
+    --button-hover: #e38fa7;
+    /* iets donkerder roze bij hover */
+    --button-active: #c87186;
+    /* voller, iets paarsroze bij actief */
+    --button-alt: #fde9ee;
+    /* pastelroze alternatieve knopkleur */
 
 
     /* MARK: Hoeken */
