@@ -24,8 +24,8 @@
             margin-left: auto;
             background: var(--button-color);
             padding: var(--spacing-small) var(--spacing-medium);
-            border: 2px solid var(--button-hover);
-            color: var(--primary-text-color);
+            border: 2px solid var(--button-active);
+            color: var(--button-active);
             border-radius: var(--border-radius-button);
             text-decoration: none;
             align-self: anchor-center;
