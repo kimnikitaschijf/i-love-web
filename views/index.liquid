@@ -1,59 +1,80 @@
 {% render 'partials/head.liquid' %}
 
-    <section class="hero">
-        <div class="hero-left">
-            <header class="header">
-                <button class="info-button">Contact</button>
+<section class="hero">
+    <div class="hero-left">
+        <header class="header">
+            <button class="info-button">Contact</button>
 
-                <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 
-                <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
+            <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-                <nav>
-                    <ul class="nav">
-                        <li><a href="#">Learning Journal</a></li>
-                        <li><a href="#">We love web</a></li>
-                        <li><a href="#">Digital Garden</a></li>
-                        <li><a href="#">Projects</a></li>
-                    </ul>
-                </nav>
-            </header>
+            <nav>
+                <ul class="nav">
+                    <li><a href="#">Learning Journal</a></li>
+                    <li><a href="#">We love web</a></li>
+                    <li><a href="#">Digital Garden</a></li>
+                    <li><a href="#">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
 
-            <div class="hero-text">
-                <svg viewBox="0 0 1000 380" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+        <div class="hero-text">
+            <svg viewBox="0 0 1000 380" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
 
-                    <circle cx="250" cy="240" r="60" class="burst" />
+                <circle cx="250" cy="240" r="60" class="burst" />
 
-                    <text x="140" y="120" class="word" transform="rotate(-4 140,120)" font-size="84">Welcome</text>
-                    <text x="600" y="130" class="word" transform="rotate(5 600,130)" font-size="84">to</text>
-                    <text x="180" y="240" class="word" transform="rotate(-5 180,240)" font-size="84">my</text>
-                    <text x="390" y="250" class="word" transform="rotate(4 390,250)" font-size="84">website</text>
+                <text x="140" y="120" class="word" transform="rotate(-4 140,120)" font-size="84">Welcome</text>
+                <text x="600" y="130" class="word" transform="rotate(5 600,130)" font-size="84">to</text>
+                <text x="180" y="240" class="word" transform="rotate(-5 180,240)" font-size="84">my</text>
+                <text x="390" y="250" class="word" transform="rotate(4 390,250)" font-size="84">website</text>
 
-                    <polygon points="50,50 55,65 70,68 58,78 60,95 50,85 40,95 42,78 30,68 45,65" class="star" />
-                    <polygon points="900,320 905,335 920,338 908,348 910,365 900,355 890,365 892,348 880,338 895,335"
-                        class="star" />
-                </svg>
+                <polygon points="50,50 55,65 70,68 58,78 60,95 50,85 40,95 42,78 30,68 45,65" class="star" />
+                <polygon points="900,320 905,335 920,338 908,348 910,365 900,355 890,365 892,348 880,338 895,335"
+                    class="star" />
+            </svg>
 
-                <span>Explore my Digital Garden, check out my latest projects, dive into We Love Web, and join me on my
-                    Learning Journal journey.</span>
+            <span>Explore my Digital Garden, check out my latest projects, dive into We Love Web, and join me on my
+                Learning Journal journey.</span>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <div class="photo-stack">
+            <div class="photo photo-1">
+                <picture>
+                    <source srcset="../assets/cover-picture-1.avif" type="image/avif" />
+                    <source srcset="../assets/cover-picture-1.webp" type="image/webp" />
+                    <img src="../assets/cover-picture-1.jpg" alt="Foto van mij" loading="lazy" />
+                </picture>
+            </div>
+
+            <div class="photo photo-2">
+               <picture>
+                    <source srcset="../assets/cover-picture-2.avif" type="image/avif" />
+                    <source srcset="../assets/cover-picture-2.webp" type="image/webp" />
+                    <img src="../assets/cover-picture-2.jpg" alt="Foto van mij" loading="lazy" />
+                </picture>
+            </div>
+
+            <div class="photo photo-3">
+                <picture>
+                    <source srcset="../assets/cover-picture-3.avif" type="image/avif" />
+                    <source srcset="../assets/cover-picture-3.webp" type="image/webp" />
+                    <img src="../assets/cover-picture-3.jpg" alt="Foto van mij" loading="lazy" />
+                </picture>
             </div>
         </div>
+    </div>
 
-        <div class="hero-right">
-            <div class="photo-stack">
-                <div class="photo photo-1"></div>
-                <div class="photo photo-2"></div>
-                <div class="photo photo-3"></div>
-            </div>
-        </div>
 
-        <svg class="hero-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-            <path fill="var(--card-color-4)" d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z"></path>
-        </svg>
-    </section>
+    <svg class="hero-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path fill="var(--card-color-4)" d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z"></path>
+    </svg>
+</section>
 
 {% comment %} {% render 'partials/foot.liquid' %} {% endcomment %}
