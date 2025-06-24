@@ -1,102 +1,59 @@
 {% render 'partials/head.liquid' %}
 
-{% comment %} intro section {% endcomment %}
-<section class="intro-section">
-    <div class="stripe-background">
-        <picture>
-            <source type="image/avif" srcset="../assets/main-picture-me.avif">
-            <source type="image/webp" srcset="../assets/main-picture-me.webp">
-            <img loading="eager" src="../assets/main-picture-me.png" class="home-main-image" alt="Kim Nikita Schijf"
-                height="300" width="200" decoding="async">
-        </picture>
-    </div>
-    <div class="intro-content">
-        <h1 class="main-title">Welcome to my I love web</h1>
-        <p class="about-us-text">
-            I'm <strong>Kim Nikita Schijf</strong>, 20 years old, from <strong>Heerhugowaard</strong>. I'm a first-year
-            <strong>FDND student</strong> at the Amsterdam University of Applied Sciences (HvA), and this site is where
-            I share everything I'm working on.
-            You’ll find my school <strong>projects</strong>, little <strong>digital</strong> experiments,
-            <strong>notes</strong> about things I’ve learned, and a bit about
-            <strong>me</strong> too.
-            <br>
-            <br>
-            I’m still learning (a lot), so this site will probably keep changing as I go. Feel free to
-            <strong>click</strong> around and check things out!
-        </p>
-        <a href="/profile" class="read-more-button">Read more about me!</a>
-    </div>
-</section>
+    <section class="hero">
+        <div class="hero-left">
+            <header class="header">
+                <button class="info-button">Contact</button>
 
+                <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 
+                <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
 
-{% comment %} subjects section {% endcomment %}
-<section class="subject-card-section">
-    <h2 class="subject-title">Read more about my projects and learnings below</h2>
-    <div class="subject-cards">
-        <article class="subject-card-layout">
-            <h3>Projects</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-        </article>
+                <nav>
+                    <ul class="nav">
+                        <li><a href="#">Learning Journal</a></li>
+                        <li><a href="#">We love web</a></li>
+                        <li><a href="#">Digital Garden</a></li>
+                        <li><a href="#">Projects</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-        <article class="subject-card-layout">
-            <h3>Digital garden</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-        </article>
+            <div class="hero-text">
+                <svg viewBox="0 0 1000 380" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
 
-        <article class="subject-card-layout">
-            <h3>Learing journal</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-        </article>
+                    <circle cx="250" cy="240" r="60" class="burst" />
 
-        <article class="subject-card-layout">
-            <h3>...</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-        </article>
-    </div>
-</section>
+                    <text x="140" y="120" class="word" transform="rotate(-4 140,120)" font-size="84">Welcome</text>
+                    <text x="600" y="130" class="word" transform="rotate(5 600,130)" font-size="84">to</text>
+                    <text x="180" y="240" class="word" transform="rotate(-5 180,240)" font-size="84">my</text>
+                    <text x="390" y="250" class="word" transform="rotate(4 390,250)" font-size="84">website</text>
 
+                    <polygon points="50,50 55,65 70,68 58,78 60,95 50,85 40,95 42,78 30,68 45,65" class="star" />
+                    <polygon points="900,320 905,335 920,338 908,348 910,365 900,355 890,365 892,348 880,338 895,335"
+                        class="star" />
+                </svg>
 
+                <span>Explore my Digital Garden, check out my latest projects, dive into We Love Web, and join me on my
+                    Learning Journal journey.</span>
+            </div>
+        </div>
 
+        <div class="hero-right">
+            <div class="photo-stack">
+                <div class="photo photo-1"></div>
+                <div class="photo photo-2"></div>
+                <div class="photo photo-3"></div>
+            </div>
+        </div>
 
-{% comment %} contact section {% endcomment %}
-<section class="contact-card-section">
-    <h2 class="contact-title">More about me</h2>
-    <div class="contact-cards">
-        <article class="contact-card-layout">
-            <h3>Work experience</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-        </article>
+        <svg class="hero-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="var(--card-color-4)" d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z"></path>
+        </svg>
+    </section>
 
-        <article class="contact-card-layout">
-            <h3>Get in contact</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-        </article>
-    </div>
-</section>
-
-{% render 'partials/foot.liquid' %}
+{% comment %} {% render 'partials/foot.liquid' %} {% endcomment %}

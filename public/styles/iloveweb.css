@@ -11,6 +11,9 @@
 body {
     margin: 0;
     padding: 0;
+    background: var(--background-color);
+    height: 150vh;
+    font-family: Arial, Helvetica, sans-serif;
 
     /* MARK: Typografie */
     --heading-font: "Petit Formal Script", cursive;
@@ -43,49 +46,20 @@ body {
     --spacing-medium: 1rem;
     --spacing-large: 2rem;
     --spacing-huge: 3rem;
+    --background-color: #0E100F;
+    --background-color-2: #f1f1f1;
 
-    /* MARK: Achtergrondkleuren */
-    --primary-background-color: #ffffff;
-    /* helder wit */
-    --secondary-background-color: #e9f0ea;
-    /* licht frisse saliegroen */
-    --light-background-color: #cfe2d0;
-    /* zachte, frisse saliegroen */
+    --card-color-1: #8BA3E1;
+    --card-text-1: #022050;
 
-    /* MARK: Navigatie/menu kleur */
-    --primary-menu-color: #6b8a6a;
-    /* medium saliegroen – goed zichtbaar, professioneel */
+    --card-color-2: #ecd98d;
+    --card-text-2: #A074B0;
 
-    /* MARK: Tekstkleuren */
-    --primary-text-color: #1f1f1f;
-    /* bijna zwart voor maximale leesbaarheid */
-    --secondary-text-color: #3f4b44;
-    /* donker grijsgroen voor hiërarchie */
-    --third-text-color: #5a6b5c;
-    /* medium grijsgroen, subtiel en zacht */
-    --alt-text-color: #ffffff;
-    /* wit op donkere vlakken */
+    --card-color-3: #AACD97;
+    --card-text-3: #3E593A;
 
-    /* MARK: Accent / highlight */
-    --primary-highlight-color: #f4a9bb;
-    /* warm babyroze – uitnodigend en levendig */
-    --secondary-highlight-color: #fde9ee;
-    /* licht pastelroze voor achtergronden */
-    --highlight-surface-violet: #f9f3f7;
-    /* lichte lavendel-roze tint als vlak */
-    --highlight-surface-pink: #fff5f7;
-    /* subtiel roze achtergrondvlak */
-
-    /* MARK: Knoppen */
-    --button-color: #ffdde5;
-    /* levendige babyroze knopkleur */
-    --button-hover: #e38fa7;
-    /* iets donkerder roze bij hover */
-    --button-active: #c87186;
-    /* voller, iets paarsroze bij actief */
-    --button-alt: #fde9ee;
-    /* pastelroze alternatieve knopkleur */
-
+    --card-color-4: #F5CCE1;
+    --card-text-4: #DD4369;
 
     /* MARK: Hoeken */
     --border-radius: 5px;
@@ -111,4 +85,55 @@ body {
     font-size: var(--font-size-small);
     justify-self: center;
     padding-left: 5%;
+}
+
+/* MARK: Skip-link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+    padding: 8px 16px;
+    z-index: 1000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+
+
+
+a {
+    position: relative;
+    color: var(--blank-color);
+    font-size: var(--font-size-xsmall);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: var(--secondary-highlight-color);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-highlight-color);
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }

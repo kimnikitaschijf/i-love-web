@@ -2,76 +2,16 @@
 <html lang="nl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>I Love Web</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="../assets/Nav-icons/site-icon.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="../assets/Nav-icons/site-icon.png" type="image/x-icon" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+
+    <script src="/assets/main.js" defer></script>
 </head>
 
+
 <body>
-
-    {% comment %} buttons helemaal bovenaan pagina {% endcomment %}
-
-    <header class="main-header">
-
-        {% comment %} <a href="#"><img class="profile-picture" src="../assets/Nav-icons/me.webp"
-                alt="Afbeelding van mij" width="50" height="50"></a> {% endcomment %}
-        <a href="/404" class="contact-button">Contact</a>
-
-        {% comment %} nav menu {% endcomment %}
-        <nav class="menu">
-            <ul class="menu-items">
-                <li class="menu-item">
-                    <a href="/projects.liquid">
-                        <picture>
-                            <source type="image/avif" srcset="../assets/Nav-icons/projects.avif">
-                            <source type="image/webp" srcset="../assets/Nav-icons/projects.webp">
-                            <img loading="eager" src="../assets/Nav-icons/projects.png" alt="Projects" width="25"
-                                height="25" decoding="async">
-                        </picture><span class="nav-text">Projects</span>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">
-                        <picture>
-                            <source type="image/avif" srcset="../assets/Nav-icons/journal.avif">
-                            <source type="image/webp" srcset="../assets/Nav-icons/journal.webp">
-                            <img loading="eager" src="../assets/Nav-icons/journal.png" alt="Journal" width="25"
-                                height="25" decoding="async">
-                        </picture><span class="nav-text">Learing Journal</span>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">
-                        <picture>
-                            <source type="image/avif" srcset="../assets/Nav-icons/garden.avif">
-                            <source type="image/webp" srcset="../assets/Nav-icons/garden.webp">
-                            <img loading="eager" src="../assets/Nav-icons/garden.png" alt="Garden" width="25"
-                                height="25" decoding="async">
-                        </picture><span class="nav-text">Digital garden</span>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">
-                        <picture>
-                            <source type="image/avif" srcset="../assets/Nav-icons/profile.avif">
-                            <source type="image/webp" srcset="../assets/Nav-icons/profile.webp">
-                            <img loading="eager" src="../assets/Nav-icons/profile.png" alt="Profile" width="25"
-                                height="25" decoding="async">
-                        </picture><span class="nav-text">Profile</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        {% comment %} <nav class="nav-logo-mobile">
-           <a class="logo" href="/"><img src="/assets-amber/logo-avl.svg" width="150" height="50"
-                    alt="Logo Antoni van Leeuwenhoek Ziekenhuis"></a>
-            <a href="/404" class="contact-button">Contact</a>
-        </nav> {% endcomment %}
-
-    </header>

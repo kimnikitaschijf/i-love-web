@@ -45,19 +45,9 @@ app.get('/digital-garden', async function (request, response) {
   response.render('digital-garden.liquid', {files: files})
 })
 
-app.get('/projects', async function (request, response) {
+app.get('/test', async function (request, response) {
   // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
-  response.render('projects.liquid')
-})
-
-app.get('/profile', async function (request, response) {
-  // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
-  response.render('profile.liquid')
-})
-
-app.get('/learning-journal', async function (request, response) {
-  // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
-  response.render('learning-journal.liquid')
+  response.render('test.liquid')
 })
 
 app.get('/404', async function (request, response) {
