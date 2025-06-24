@@ -47,34 +47,66 @@
         <div class="photo-stack">
             <div class="photo photo-1">
                 <picture>
-                    <source srcset="../assets/cover-picture-1.avif" type="image/avif" />
-                    <source srcset="../assets/cover-picture-1.webp" type="image/webp" />
-                    <img src="../assets/cover-picture-1.jpg" alt="Foto van mij" loading="lazy" />
+                    <source type="image/avif" srcset="
+        /assets/cover-picture-1-400.avif 400w,
+        /assets/cover-picture-1-600.avif 600w,
+        /assets/cover-picture-1-800.avif 800w" sizes="(max-width: 720px) 250px, (max-width: 1020px) 300px, 350px" />
+                    <img src="/assets/cover-picture-1-800.jpg" alt="Foto van mij" loading="eager" decoding="async"
+                        fetchpriority="high" srcset="
+        /assets/cover-picture-1-400.jpg 400w,
+        /assets/cover-picture-1-600.jpg 600w,
+        /assets/cover-picture-1-800.jpg 800w" sizes="(max-width: 720px) 250px, (max-width: 1020px) 300px, 350px" />
                 </picture>
             </div>
 
             <div class="photo photo-2">
-               <picture>
-                    <source srcset="../assets/cover-picture-2.avif" type="image/avif" />
-                    <source srcset="../assets/cover-picture-2.webp" type="image/webp" />
-                    <img src="../assets/cover-picture-2.jpg" alt="Foto van mij" loading="lazy" />
+                <picture>
+                    <source type="image/avif" srcset="
+        /assets/cover-picture-2-400.avif 400w,
+        /assets/cover-picture-2-600.avif 600w,
+        /assets/cover-picture-2-800.avif 800w" sizes="(max-width: 720px) 280px, (max-width: 1020px) 320px, 370px" />
+                    <img src="/assets/cover-picture-2-800.jpg" alt="Foto van mij" loading="lazy" decoding="async"
+                        srcset="
+        /assets/cover-picture-2-400.jpg 400w,
+        /assets/cover-picture-2-600.jpg 600w,
+        /assets/cover-picture-2-800.jpg 800w" sizes="(max-width: 720px) 280px, (max-width: 1020px) 320px, 370px" />
                 </picture>
             </div>
 
             <div class="photo photo-3">
                 <picture>
-                    <source srcset="../assets/cover-picture-3.avif" type="image/avif" />
-                    <source srcset="../assets/cover-picture-3.webp" type="image/webp" />
-                    <img src="../assets/cover-picture-3.jpg" alt="Foto van mij" loading="lazy" />
+                    <source type="image/avif" srcset="
+        /assets/cover-picture-3-400.avif 400w,
+        /assets/cover-picture-3-600.avif 600w,
+        /assets/cover-picture-3-800.avif 800w" sizes="(max-width: 720px) 310px, (max-width: 1020px) 350px, 400px" />
+                    <img src="/assets/cover-picture-3-800.jpg" alt="Foto van mij" loading="lazy" decoding="async"
+                        srcset="
+        /assets/cover-picture-3-400.jpg 400w,
+        /assets/cover-picture-3-600.jpg 600w,
+        /assets/cover-picture-3-800.jpg 800w" sizes="(max-width: 720px) 310px, (max-width: 1020px) 350px, 400px" />
                 </picture>
             </div>
+
+            <div class="photo photo-4">
+                <picture>
+                    <source type="image/avif" srcset="
+        /assets/cover-picture-4-400.avif 400w,
+        /assets/cover-picture-4-600.avif 600w,
+        /assets/cover-picture-4-800.avif 800w" sizes="(max-width: 720px) 270px, (max-width: 1020px) 300px, 340px" />
+                    <img src="/assets/cover-picture-4-800.jpg" alt="Foto van mij" loading="lazy" decoding="async"
+                        srcset="
+        /assets/cover-picture-4-400.jpg 400w,
+        /assets/cover-picture-4-600.jpg 600w,
+        /assets/cover-picture-4-800.jpg 800w" sizes="(max-width: 720px) 270px, (max-width: 1020px) 300px, 340px" />
+                </picture>
+            </div>
+
         </div>
     </div>
-
 
     <svg class="hero-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
         <path fill="var(--card-color-4)" d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z"></path>
     </svg>
 </section>
 
-{% comment %} {% render 'partials/foot.liquid' %} {% endcomment %}
+{% render 'partials/foot.liquid' %}

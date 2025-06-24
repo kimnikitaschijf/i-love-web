@@ -1,18 +1,25 @@
-<!DOCTYPE html>
-<html lang="nl">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>I Love Web</title>
+
+    <link rel="preload" href="styles/styles.css" as="style" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="../assets/Nav-icons/site-icon.png" type="image/x-icon" />
+    <source type="image/avif" srcset="
+    /assets/cover-picture-1-400.avif 400w,
+    /assets/cover-picture-1-600.avif 600w,
+    /assets/cover-picture-1-800.avif 800w" sizes="(max-width: 600px) 400px, (max-width: 900px) 600px, 800px" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+    </noscript>
+
+    <link rel="icon" href="assets/Nav-icons/site-icon.png" type="image/x-icon" />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
 
-    <script src="/assets/main.js" defer></script>
 </head>
-
-
-<body>
