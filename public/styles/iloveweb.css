@@ -58,7 +58,7 @@ body {
     --card-color-3: #AACD97;
     --card-text-3: #3E593A;
 
-    --card-color-4: #F5CCE1;
+    --card-color-4: #f7d7e8;
     --card-text-4: #DD4369;
 
     /* MARK: Hoeken */
@@ -104,9 +104,6 @@ body {
 .skip-link:focus {
     top: 0;
 }
-
-
-
 
 a {
     position: relative;
