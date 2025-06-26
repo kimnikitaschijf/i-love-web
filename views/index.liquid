@@ -1,24 +1,30 @@
 {% render 'partials/head.liquid' %}
 
+<div class="logo-scroll">
+    <div class="logo-track">
+        <span class="track-text">I love web</span>
+        <span class="track-text">❤</span>
+        <span class="track-text">I love web</span>
+        <span class="track-text">❤</span>
+        <span class="track-text">I love web</span>
+        <span class="track-text">❤</span>
+        <span class="track-text">I love web</span>
+        <span class="track-text">❤</span>
+        <span class="track-text">I love web</span>
+        <span class="track-text">❤</span>
+    </div>
+</div>
+
 <section class="hero">
     <div class="hero-left">
         <header class="header">
-            <button class="info-button">Contact</button>
-
-            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-
-            <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-
             <nav>
                 <ul class="nav">
                     <li><a href="#">Learning Journal</a></li>
                     <li><a href="#">We love web</a></li>
                     <li><a href="#">Digital Garden</a></li>
                     <li><a href="#">Projects</a></li>
+                    <li><a href="#" class="contact-button">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -27,10 +33,9 @@
             <h1 id="hero-text">Welcome to my website</h1>
             <span class="fade-in">Explore my Digital Garden, check out my latest projects, dive into We Love Web,
                 and join me on my Learning Journal journey.</span>
-            <a href="#about" class="scroll-indicator" aria-label="Scroll to next section">
+            <a href="#main-content" class="arrow-down" aria-label="Scroll to next section">
                 ↓
             </a>
-
         </div>
     </div>
 
@@ -56,7 +61,7 @@
         /assets/cover-picture-2-400.avif 400w,
         /assets/cover-picture-2-600.avif 600w,
         /assets/cover-picture-2-800.avif 800w" sizes="(max-width: 720px) 280px, (max-width: 1020px) 320px, 370px" />
-                    <img src="/assets/cover-picture-2-800.jpg" alt="Foto van mij" loading="lazy" decoding="async"
+                    <img src="/assets/cover-picture-2-800.jpg" alt="Foto van mij" loading="eager" decoding="async"
                         srcset="
         /assets/cover-picture-2-400.jpg 400w,
         /assets/cover-picture-2-600.jpg 600w,
@@ -97,12 +102,10 @@
     <svg class="hero-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
         <path fill="var(--card-color-1)" d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z"></path>
     </svg>
-
 </section>
 
-<section id="about">
-    <!-- inhoud van de volgende sectie -->
+<section id="main-content">
+    <article class=""></article>
 </section>
-
 
 {% render 'partials/foot.liquid' %}

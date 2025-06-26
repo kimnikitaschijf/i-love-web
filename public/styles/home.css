@@ -1,3 +1,35 @@
+/* Infinite scroll bovenaan */
+.logo-scroll {
+    overflow: hidden;
+    background-color: var(--card-color-4);
+    padding: 1rem 0;
+    width: 100%;
+    font-family: var(--site-font);
+    font-size: 1rem;
+    font-weight: bold;
+
+    /* Styling in scroll */
+    .logo-track {
+        display: flex;
+        gap: 4rem;
+        animation: scrollLeft 20s linear infinite;
+        width: max-content;
+        color: var(--card-text-4);
+        letter-spacing: 0.3rem;
+
+        @media (min-width: 720px) {
+            gap: 5rem;
+            animation: scrollLeft 25s linear infinite;
+        }
+
+        @media (min-width: 1020px) {
+            gap: 7rem;
+            animation: scrollLeft 30s linear infinite;
+        }
+    }
+}
+
+/* Intro section */
 .hero {
     display: flex;
     flex-direction: column;
@@ -7,230 +39,142 @@
     background-color: var(--card-color-1);
     overflow: visible;
     margin: 0;
+    overflow-x: clip;
 
     @media screen and (min-width: 1020px) {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 4rem;
+        gap: 5rem;
         min-height: fit-content;
     }
 
+    /* Sectie met menu, tekst en H1 */
     .hero-left {
         position: relative;
-        margin: 1rem;
+        margin: 0.5rem;
         z-index: 1;
         padding: 0.5rem;
+        align-items: center;
 
         @media screen and (min-width: 1020px) {
             display: flex;
             flex-direction: column;
-            margin: 2rem 0 2rem 2rem;
-            /* aangepast voor desktop */
-        }
-
-        .header {
-            display: none;
-
-            @media screen and (min-width: 1020px) {
-                display: flex;
-                align-items: center;
-                padding: 0 1rem;
-                border-radius: 15px;
-                justify-content: flex-start;
-                width: fit-content;
-                padding: 0;
-                flex-direction: row;
-                gap: 2rem;
-            }
-
-            .info-button {
-                font-size: 1rem;
-                padding: 0.8rem;
-                border-radius: 15px;
-                border: none;
-                color: var(--background-color-2);
-                background-color: var(--card-text-1);
-                margin: 0.5rem;
-                font-weight: bold;
-                cursor: pointer;
-                z-index: 1;
-                position: relative;
-                font-family: var(--site-font);
-
-                @media screen and (min-width: 1020px) {
-                    margin: 1rem;
-                }
-
-            }
-
-            .menu-toggle {
-                display: none;
-            }
-
-            .menu-icon {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: 5px;
-                width: 30px;
-                height: 25px;
-                cursor: pointer;
-                z-index: 2;
-                margin: 1rem;
-
-                span {
-                    display: block;
-                    height: 3px;
-                    width: 100%;
-                    background-color: var(--card-text-1);
-                    border-radius: 2px;
-                }
-
-                @media screen and (min-width: 1020px) {
-                    display: none;
-                }
-            }
-
-            nav {
-                display: none;
-                background-color: var(--background-color-2);
-                padding: 0.8rem;
-                border-radius: 15px;
-                position: absolute;
-                right: 1rem;
-                width: 200px;
-                box-shadow: var(--box-shadow);
-                z-index: 1;
-                text-align: center;
-
-                a {
-                    color: var(--card-text-1);
-                    font-family: var(--site-font);
-                    text-decoration: none;
-                    font-weight: bold;
-                    line-height: 1.5;
-
-                    @media screen and (min-width: 1020px) {
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                    }
-                }
-
-                .nav {
-                    list-style: none;
-                    padding: 0;
-                    margin: 0;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 1.5rem;
-
-                    li {
-                        list-style: none;
-                    }
-
-                    @media screen and (min-width: 1020px) {
-                        flex-direction: row;
-                        align-items: center;
-                        gap: 3rem;
-
-                        li {
-                            display: inline;
-                        }
-                    }
-                }
-
-                @media screen and (min-width: 1020px) {
-                    display: flex;
-                    position: relative;
-                    background: var(--background-color-2);
-                    padding: 0.8rem;
-                    width: auto;
-                    box-shadow: none;
-                }
-            }
-        }
-
-        .menu-toggle:checked+.menu-icon+nav {
-            display: flex;
-            top: 3rem;
-            z-index: 2;
-            font-family: var(--site-font);
-            justify-content: center;
-        }
-    }
-
-    .hero-text {
-        @media screen and (min-width: 1020px) {
-            margin: 3rem 1rem;
-        }
-
-        h1 {
-            font-family: var(--heading-font);
-            font-size: var(--font-size-large);
-            letter-spacing: 0.07em;
-            display: flex;
-            flex-wrap: nowrap;
-            user-select: none;
-            justify-content: center;
+            margin: 1rem 2rem;
             align-items: center;
+            width: 80%;
+            max-width: 600px;
+        }
+    }
+}
+
+/* Header nav */
+.header {
+    display: none;
+
+    @media screen and (min-width: 1020px) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    /* Nav layout */
+    nav {
+        background-color: var(--background-color-2);
+        padding: 1rem 2rem;
+        border-radius: 15px;
+        width: 100%;
+        margin: 0 auto;
+        overflow-x: auto;
+        scrollbar-width: thin;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Nav lijst stijl */
+    ul.nav {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        min-width: max-content;
+    }
+
+    /* Nav linkjes */
+    ul.nav li a {
+        white-space: nowrap;
+        color: var(--card-text-1);
+        text-decoration: none;
+        font-family: var(--site-font);
+        font-weight: 500;
+        padding: 0.3rem 0;
+        display: block;
+    }
+
+    /* Nav contact button */
+    .contact-button {
+        color: var(--card-text-1);
+        padding: 0.6rem 1.2rem;
+        border-radius: 8px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        margin-left: 2rem;
+        white-space: nowrap;
+    }
+}
+
+/* Intro text span en H1 */
+.hero-text {
+    @media screen and (min-width: 1020px) {
+        margin: 3rem 1rem;
+    }
+
+    h1 {
+        letter-spacing: 0.07em;
+        display: flex;
+        flex-wrap: nowrap;
+        user-select: none;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto 0rem;
+    }
+
+    h1 span {
+        display: inline-block;
+        font-size: var(--font-size-large);
+        font-weight: bold;
+        font-family: var(--heading-font);
+        opacity: 0;
+        transform-origin: center bottom;
+        cursor: default;
+    }
+
+    /* Pijl omlaag (mobile) */
+    .arrow-down {
+        display: none;
+    }
+
+    @media screen and (min-width: 1020px) {
+        .arrow-down {
+            display: block;
+            text-align: center;
+            font-size: 3rem;
             color: var(--card-text-1);
-            margin: 2rem auto 0rem;
-        }
-
-        h1 span {
-            display: inline-block;
-            font-weight: bold;
-            font-family: var(--heading-font);
             opacity: 0;
-            transform-origin: center bottom;
-            cursor: default;
-        }
-
-        .scroll-indicator {
-            display: none;
-        }
-
-        @media screen and (min-width: 1020px) {
-            .scroll-indicator {
-                display: block;
-                text-align: center;
-                font-size: 3rem;
-                color: var(--card-text-1);
-                opacity: 0;
-                animation: fadeInScroll 1s ease forwards, pulseDown 1.5s infinite;
-                animation-delay: 3s, 3.5s;
-                margin-top: 1.5rem;
-                /* iets dichterbij */
-                user-select: none;
-                text-decoration: none;
-                transition: color 0.3s;
-                cursor: pointer;
-            }
+            animation: fadeInScroll 1s ease forwards, pulseDown 1.5s infinite;
+            animation-delay: 3s, 3.5s;
+            margin-top: 1.5rem;
+            user-select: none;
+            text-decoration: none;
+            transition: color 0.3s;
+            cursor: pointer;
         }
     }
 }
 
-@keyframes fadeInScroll {
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes pulseDown {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(8px);
-        opacity: 1;
-    }
-}
-
+/* Span intro text + animatie */
 .fade-in {
     display: block;
     line-height: 1.7;
@@ -250,18 +194,11 @@
 
     @media screen and (min-width: 1020px) {
         max-width: 480px;
-        /* iets breder */
         line-height: 2.0;
-        text-align: left;
     }
 }
 
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
+/* Sectie met photo stack */
 .hero-right {
     position: relative;
     margin-top: 1rem;
@@ -271,6 +208,8 @@
     margin-right: auto;
     flex-direction: column;
     align-items: center;
+    z-index: 0;
+    overflow: visible;
 
     @media (min-width: 720px) {
         max-width: 600px;
@@ -279,27 +218,23 @@
     @media (min-width: 1020px) {
         max-width: 800px;
         margin: 2rem 2rem 2rem 0;
-        /* toegevoegd */
     }
 }
 
+/* Photo stack stapel layout */
 .photo-stack {
     position: relative;
     width: 100%;
-    height: 240px;
+    max-width: 100%;
+    height: clamp(240px, 45vw, 500px);
     margin: 0 auto;
-
-    @media (min-width: 720px) {
-        height: 380px;
-    }
-
-    @media (min-width: 1020px) {
-        height: 500px;
-        max-width: 600px;
-        margin-left: 2rem;
-    }
+    overflow: visible;
+    padding-inline: 1rem;
+    box-sizing: border-box;
+    margin: 1rem;
 }
 
+/* Photo layout */
 .photo-1,
 .photo-2,
 .photo-3,
@@ -313,92 +248,39 @@
     transition: none;
     border-width: 4px;
     border-style: solid;
+    width: clamp(240px, 35vw, 320px);
+    height: clamp(300px, 40vw, 380px);
 }
 
+/* Photo 1 */
 .photo-1 {
     border-color: var(--card-color-4);
     z-index: 1;
-    transform: translate(calc(-50% - 14px), calc(-50% - 0px)) rotate(5deg);
-
-    @media (min-width: 720px) {
-        width: 270px;
-        height: 340px;
-    }
-
-    @media (min-width: 1020px) {
-        width: 320px;
-        height: 380px;
-        transform: translate(calc(-50% - 60px), calc(-50% - 20px)) rotate(6deg);
-    }
-
-    @media (max-width: 1019px) {
-        transform: translate(calc(-50% - 14px), calc(-50% - 0px)) rotate(5deg);
-    }
+    transform: translate(-52%, -50%) rotate(5deg);
 }
 
+/* Photo 2 */
 .photo-2 {
     border-color: var(--card-color-2);
     z-index: 2;
-    transform: translate(calc(-50% + 15px), calc(-50% - 0px)) rotate(-3deg);
-
-    @media (min-width: 720px) {
-        width: 300px;
-        height: 340px;
-    }
-
-    @media (min-width: 1020px) {
-        width: 340px;
-        height: 380px;
-        transform: translate(calc(-50% + 60px), calc(-50% - 20px)) rotate(-4deg);
-    }
-
-    @media (max-width: 1019px) {
-        transform: translate(calc(-50% + 15px), calc(-50% - 0px)) rotate(-3deg);
-    }
+    transform: translate(-48%, -50%) rotate(-4deg);
 }
 
+/* Photo 3 */
 .photo-3 {
     border-color: var(--card-color-3);
     z-index: 3;
-    transform: translate(calc(-50% + 12px), calc(-50% + 0px)) rotate(6deg);
-
-    @media (min-width: 720px) {
-        width: 330px;
-        height: 340px;
-    }
-
-    @media (min-width: 1020px) {
-        width: 360px;
-        height: 380px;
-        transform: translate(calc(-50% + 40px), calc(-50% + 30px)) rotate(5deg);
-    }
-
-    @media (max-width: 1019px) {
-        transform: translate(calc(-50% + 12px), calc(-50% + 0px)) rotate(6deg);
-    }
+    transform: translate(-47%, -49%) rotate(5deg);
 }
 
+/* Photo 4 */
 .photo-4 {
     border-color: var(--card-text-2);
     z-index: 4;
-    transform: translate(calc(-50% - 13px), calc(-50% + 0px)) rotate(-8deg);
-
-    @media (min-width: 720px) {
-        width: 290px;
-        height: 340px;
-    }
-
-    @media (min-width: 1020px) {
-        width: 340px;
-        height: 380px;
-        transform: translate(calc(-50% - 50px), calc(-50% + 30px)) rotate(-7deg);
-    }
-
-    @media (max-width: 1019px) {
-        transform: translate(calc(-50% - 13px), calc(-50% + 0px)) rotate(-8deg);
-    }
+    transform: translate(-53%, -49%) rotate(-6deg);
 }
 
+/* img in photo */
 .photo img {
     width: 100%;
     height: 100%;
@@ -406,14 +288,14 @@
     display: block;
 }
 
-
+/* Golf svg onderaan sectie */
 .hero-wave {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 120px;
-    z-index: 0;
+    z-index: 20;
     transform: rotate(180deg);
     transform-origin: center bottom;
 }

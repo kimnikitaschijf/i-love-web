@@ -17,7 +17,6 @@ body {
     /* MARK: Typografie */
     --heading-font: "Playfair Display", Georgia, serif;
     --site-font: 'Montserrat', sans-serif;
-    ;
 
     /* MARK: Font sizes */
     --font-size-huge: clamp(1.75rem, 3vw + 0.5rem, 2.5rem);
@@ -47,6 +46,7 @@ body {
     --spacing-large: 2rem;
     --spacing-huge: 3rem;
 
+    /* MARK: Colors */
     --background-color: #0E100F;
     --background-color-2: #f1f1f1;
 
@@ -62,9 +62,10 @@ body {
     --card-color-4: #f7d7e8;
     --card-text-4: #DD4369;
 
+    /* MARK: Box-shadow */
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
-    /* MARK: Hoeken */
+    /* MARK: Cornors */
     --border-radius: 5px;
     --border-radius-button: 50px;
     --border-radius-menu: 0rem 0rem 0.75rem 0.75rem;
@@ -110,8 +111,8 @@ body {
 
 a {
     position: relative;
-    color: var(--blank-color);
-    font-size: var(--font-size-xsmall);
+    color: var(--card-text-1);
+    font-size: 1rem;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -123,17 +124,58 @@ a::after {
     bottom: -3px;
     width: 100%;
     height: 2px;
-    background: var(--secondary-highlight-color);
+    background: var(--card-text-1);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.3s ease;
 }
 
 a:hover {
-    color: var(--secondary-highlight-color);
+    color: var(--card-text-1);
 }
 
 a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
+}
+
+/* MARK: Animaties */
+
+/* Pijl fade in animatie */
+@keyframes fadeInScroll {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Pijl op en neer animatie */
+@keyframes pulseDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+        opacity: 1;
+    }
+}
+
+/* Span fade-in animatie */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Infinite scroll header */
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
