@@ -10,7 +10,9 @@
 
     @media screen and (min-width: 1020px) {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
         min-height: fit-content;
     }
 
@@ -23,17 +25,18 @@
         @media screen and (min-width: 1020px) {
             display: flex;
             flex-direction: column;
+            margin: 2rem 0 2rem 2rem;
+            /* aangepast voor desktop */
         }
 
         .header {
-            display: flex;
-            align-items: center;
-            padding: 0 1rem;
-            border-radius: 15px;
-            gap: 3rem;
-            justify-content: space-between;
+            display: none;
 
             @media screen and (min-width: 1020px) {
+                display: flex;
+                align-items: center;
+                padding: 0 1rem;
+                border-radius: 15px;
                 justify-content: flex-start;
                 width: fit-content;
                 padding: 0;
@@ -170,7 +173,6 @@
             display: flex;
             flex-wrap: nowrap;
             user-select: none;
-            display: flex;
             justify-content: center;
             align-items: center;
             color: var(--card-text-1);
@@ -199,7 +201,8 @@
                 opacity: 0;
                 animation: fadeInScroll 1s ease forwards, pulseDown 1.5s infinite;
                 animation-delay: 3s, 3.5s;
-                margin-top: 3rem;
+                margin-top: 1.5rem;
+                /* iets dichterbij */
                 user-select: none;
                 text-decoration: none;
                 transition: color 0.3s;
@@ -231,7 +234,7 @@
 .fade-in {
     display: block;
     line-height: 1.7;
-    margin: 1rem auto;
+    margin: 1rem auto 3rem;
     max-width: 500px;
     text-align: center;
     position: relative;
@@ -246,7 +249,8 @@
     animation-delay: 1.5s;
 
     @media screen and (min-width: 1020px) {
-        max-width: 400px;
+        max-width: 480px;
+        /* iets breder */
         line-height: 2.0;
         text-align: left;
     }
@@ -267,17 +271,15 @@
     margin-right: auto;
     flex-direction: column;
     align-items: center;
-}
 
-@media (min-width: 720px) {
-    .hero-right {
+    @media (min-width: 720px) {
         max-width: 600px;
     }
-}
 
-@media (min-width: 1020px) {
-    .hero-right {
+    @media (min-width: 1020px) {
         max-width: 800px;
+        margin: 2rem 2rem 2rem 0;
+        /* toegevoegd */
     }
 }
 
@@ -293,55 +295,15 @@
 
     @media (min-width: 1020px) {
         height: 500px;
-        margin-left: 1rem;
+        max-width: 600px;
+        margin-left: 2rem;
     }
 }
 
-@media (min-width: 720px) {
-    .photo-1 {
-        width: 270px;
-        height: 340px;
-    }
-
-    .photo-2 {
-        width: 300px;
-        height: 340px;
-    }
-
-    .photo-3 {
-        width: 330px;
-        height: 340px;
-    }
-
-    .photo-4 {
-        width: 290px;
-        height: 340px;
-    }
-}
-
-@media (min-width: 1020px) {
-    .photo-1 {
-        width: 300px;
-        height: 360px;
-    }
-
-    .photo-2 {
-        width: 330px;
-        height: 360px;
-    }
-
-    .photo-3 {
-        width: 360px;
-        height: 360px;
-    }
-
-    .photo-4 {
-        width: 320px;
-        height: 360px;
-    }
-}
-
-.photo {
+.photo-1,
+.photo-2,
+.photo-3,
+.photo-4 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -349,30 +311,92 @@
     transform-origin: center center;
     transform-style: preserve-3d;
     transition: none;
+    border-width: 4px;
+    border-style: solid;
 }
 
 .photo-1 {
-    border: 4px solid var(--card-color-4);
+    border-color: var(--card-color-4);
     z-index: 1;
     transform: translate(calc(-50% - 14px), calc(-50% - 0px)) rotate(5deg);
+
+    @media (min-width: 720px) {
+        width: 270px;
+        height: 340px;
+    }
+
+    @media (min-width: 1020px) {
+        width: 320px;
+        height: 380px;
+        transform: translate(calc(-50% - 60px), calc(-50% - 20px)) rotate(6deg);
+    }
+
+    @media (max-width: 1019px) {
+        transform: translate(calc(-50% - 14px), calc(-50% - 0px)) rotate(5deg);
+    }
 }
 
 .photo-2 {
-    border: 4px solid var(--card-color-2);
+    border-color: var(--card-color-2);
     z-index: 2;
     transform: translate(calc(-50% + 15px), calc(-50% - 0px)) rotate(-3deg);
+
+    @media (min-width: 720px) {
+        width: 300px;
+        height: 340px;
+    }
+
+    @media (min-width: 1020px) {
+        width: 340px;
+        height: 380px;
+        transform: translate(calc(-50% + 60px), calc(-50% - 20px)) rotate(-4deg);
+    }
+
+    @media (max-width: 1019px) {
+        transform: translate(calc(-50% + 15px), calc(-50% - 0px)) rotate(-3deg);
+    }
 }
 
 .photo-3 {
-    border: 4px solid var(--card-color-3);
+    border-color: var(--card-color-3);
     z-index: 3;
     transform: translate(calc(-50% + 12px), calc(-50% + 0px)) rotate(6deg);
+
+    @media (min-width: 720px) {
+        width: 330px;
+        height: 340px;
+    }
+
+    @media (min-width: 1020px) {
+        width: 360px;
+        height: 380px;
+        transform: translate(calc(-50% + 40px), calc(-50% + 30px)) rotate(5deg);
+    }
+
+    @media (max-width: 1019px) {
+        transform: translate(calc(-50% + 12px), calc(-50% + 0px)) rotate(6deg);
+    }
 }
 
 .photo-4 {
-    border: 4px solid var(--card-text-2);
+    border-color: var(--card-text-2);
     z-index: 4;
     transform: translate(calc(-50% - 13px), calc(-50% + 0px)) rotate(-8deg);
+
+    @media (min-width: 720px) {
+        width: 290px;
+        height: 340px;
+    }
+
+    @media (min-width: 1020px) {
+        width: 340px;
+        height: 380px;
+        transform: translate(calc(-50% - 50px), calc(-50% + 30px)) rotate(-7deg);
+    }
+
+    @media (max-width: 1019px) {
+        transform: translate(calc(-50% - 13px), calc(-50% + 0px)) rotate(-8deg);
+    }
 }
 
 .photo img {
@@ -381,6 +405,7 @@
     object-fit: cover;
     display: block;
 }
+
 
 .hero-wave {
     position: absolute;
