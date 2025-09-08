@@ -1,111 +1,137 @@
 {% render 'partials/head.liquid' %}
 
-<div class="logo-scroll">
-    <div class="logo-track">
-        <span class="track-text">I love web</span>
-        <span class="track-text">❤</span>
-        <span class="track-text">I love web</span>
-        <span class="track-text">❤</span>
-        <span class="track-text">I love web</span>
-        <span class="track-text">❤</span>
-        <span class="track-text">I love web</span>
-        <span class="track-text">❤</span>
-        <span class="track-text">I love web</span>
-        <span class="track-text">❤</span>
-    </div>
-</div>
-
-<section class="hero">
-    <div class="hero-left">
-        <header class="header">
-            <nav>
-                <ul class="nav">
-                    <li><a href="#">Learning Journal</a></li>
-                    <li><a href="#">We love web</a></li>
-                    <li><a href="#">Digital Garden</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#" class="contact-button">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="hero-text">
-            <h1 id="hero-text">Welcome to my website</h1>
-            <span class="fade-in">Explore my Digital Garden, check out my latest projects, dive into We Love Web,
-                and join me on my Learning Journal journey.</span>
-            <a href="#main-content" class="arrow-down" aria-label="Scroll to next section">
-                ↓
-            </a>
+<section>
+    <div class="logo-scroll">
+        <div class="logo-track">
+            <span class="track-text">I love web</span>
+            <span class="track-text">❤</span>
+            <span class="track-text">I love web</span>
+            <span class="track-text">❤</span>
+            <span class="track-text">I love web</span>
+            <span class="track-text">❤</span>
+            <span class="track-text">I love web</span>
+            <span class="track-text">❤</span>
+            <span class="track-text">I love web</span>
+            <span class="track-text">❤</span>
+            <span class="track-text">I love web</span>
+            <span class="track-text">❤</span>
+            <span class="track-text">I love web</span>
+            <span class="track-text">❤</span>
+            <span class="track-text">I love web</span>
+            <span class="track-text">❤</span>
         </div>
     </div>
 
-    <div class="hero-right">
-        <div class="photo-stack">
-            <div class="photo photo-1">
-                <picture>
-                    <source type="image/avif" srcset="
+    <section class="hero">
+        <div class="hero-left">
+            <header class="header">
+                <nav>
+                    <ul class="nav">
+                        <li><a href="#">Learning Journal</a></li>
+                        <li><a href="#">We love web</a></li>
+                        <li><a href="/digital-garden">Digital Garden</a></li>
+                        <li><a href="https://github.com/kimnikitaschijf">Projects</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="hero-text">
+                <h1 id="hero-text">Welcome to my website</h1>
+                <span class="fade-in">Explore my Digital Garden, check out my latest projects, dive into We Love Web,
+                    and join me on my Learning Journal journey.</span>
+                <span class="arrow-down" aria-label="Scroll to next section">
+                    ↓
+                </span>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="photo-stack">
+                <div class="photo photo-1">
+                    <picture>
+                        <source type="image/avif" srcset="
         /assets/cover-picture-1-400.avif 400w,
         /assets/cover-picture-1-600.avif 600w,
         /assets/cover-picture-1-800.avif 800w" sizes="(max-width: 720px) 250px, (max-width: 1020px) 300px, 350px" />
-                    <img src="/assets/cover-picture-1-800.jpg" alt="Foto van mij" loading="eager" decoding="async"
-                        fetchpriority="high" srcset="
+                        <img src="/assets/cover-picture-1-800.jpg" alt="Foto van mij" loading="eager" decoding="async"
+                            fetchpriority="high" srcset="
         /assets/cover-picture-1-400.jpg 400w,
         /assets/cover-picture-1-600.jpg 600w,
         /assets/cover-picture-1-800.jpg 800w" sizes="(max-width: 720px) 250px, (max-width: 1020px) 300px, 350px" />
-                </picture>
-            </div>
+                    </picture>
+                </div>
 
-            <div class="photo photo-2">
-                <picture>
-                    <source type="image/avif" srcset="
+                <div class="photo photo-2">
+                    <picture>
+                        <source type="image/avif" srcset="
         /assets/cover-picture-2-400.avif 400w,
         /assets/cover-picture-2-600.avif 600w,
         /assets/cover-picture-2-800.avif 800w" sizes="(max-width: 720px) 280px, (max-width: 1020px) 320px, 370px" />
-                    <img src="/assets/cover-picture-2-800.jpg" alt="Foto van mij" loading="eager" decoding="async"
-                        srcset="
+                        <img src="/assets/cover-picture-2-800.jpg" alt="Foto van mij" loading="eager" decoding="async"
+                            srcset="
         /assets/cover-picture-2-400.jpg 400w,
         /assets/cover-picture-2-600.jpg 600w,
         /assets/cover-picture-2-800.jpg 800w" sizes="(max-width: 720px) 280px, (max-width: 1020px) 320px, 370px" />
-                </picture>
-            </div>
+                    </picture>
+                </div>
 
-            <div class="photo photo-3">
-                <picture>
-                    <source type="image/avif" srcset="
+                <div class="photo photo-3">
+                    <picture>
+                        <source type="image/avif" srcset="
         /assets/cover-picture-3-400.avif 400w,
         /assets/cover-picture-3-600.avif 600w,
         /assets/cover-picture-3-800.avif 800w" sizes="(max-width: 720px) 310px, (max-width: 1020px) 350px, 400px" />
-                    <img src="/assets/cover-picture-3-800.jpg" alt="Foto van mij" loading="lazy" decoding="async"
-                        srcset="
+                        <img src="/assets/cover-picture-3-800.jpg" alt="Foto van mij" loading="lazy" decoding="async"
+                            srcset="
         /assets/cover-picture-3-400.jpg 400w,
         /assets/cover-picture-3-600.jpg 600w,
         /assets/cover-picture-3-800.jpg 800w" sizes="(max-width: 720px) 310px, (max-width: 1020px) 350px, 400px" />
-                </picture>
-            </div>
+                    </picture>
+                </div>
 
-            <div class="photo photo-4">
-                <picture>
-                    <source type="image/avif" srcset="
+                <div class="photo photo-4">
+                    <picture>
+                        <source type="image/avif" srcset="
         /assets/cover-picture-4-400.avif 400w,
         /assets/cover-picture-4-600.avif 600w,
         /assets/cover-picture-4-800.avif 800w" sizes="(max-width: 720px) 270px, (max-width: 1020px) 300px, 340px" />
-                    <img src="/assets/cover-picture-4-800.jpg" alt="Foto van mij" loading="lazy" decoding="async"
-                        srcset="
+                        <img src="/assets/cover-picture-4-800.jpg" alt="Foto van mij" loading="lazy" decoding="async"
+                            srcset="
         /assets/cover-picture-4-400.jpg 400w,
         /assets/cover-picture-4-600.jpg 600w,
         /assets/cover-picture-4-800.jpg 800w" sizes="(max-width: 720px) 270px, (max-width: 1020px) 300px, 340px" />
-                </picture>
+                    </picture>
+                </div>
             </div>
         </div>
-    </div>
 
-    <svg class="hero-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-        <path fill="var(--card-color-1)" d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z"></path>
-    </svg>
+        <svg class="hero-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="var(--color-primary-background)" d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z"></path>
+        </svg>
+    </section>
 </section>
 
-<section id="main-content">
-    <article class=""></article>
+<section class="main-content" id="main-content">
+    <div class="tile-1">
+        <h2>Title</h2>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</span>
+    </div>
+    <div class="tile-2">
+        <h2>Title</h2>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</span>
+    </div>
+    <div class="tile-3">
+        <h2>Title</h2>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</span>
+    </div>
+    <div class="tile-4">
+        <h2>Title</h2>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</span>
+    </div>
 </section>
 
 {% render 'partials/foot.liquid' %}

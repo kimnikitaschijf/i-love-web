@@ -1,7 +1,7 @@
 // Website enter animatie
 // Kleuren van letters (roze, blauw en paars)
 const colors = [
-    '#020f99'
+    '#6B4D38'
 ];
 
 const textEl = document.getElementById('hero-text');

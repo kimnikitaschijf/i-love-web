@@ -1,12 +1,12 @@
 /* Infinite scroll bovenaan */
 .logo-scroll {
     overflow: hidden;
-    background-color: var(--card-color-4);
+    background-color: var(--color-primary);
     padding: 1rem 0;
     width: 100%;
     font-family: var(--site-font);
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold);
 
     /* Styling in scroll */
     .logo-track {
@@ -14,7 +14,7 @@
         gap: 4rem;
         animation: scrollLeft 20s linear infinite;
         width: max-content;
-        color: var(--card-text-4);
+        color: var(--color-accent);
         letter-spacing: 0.3rem;
 
         @media (min-width: 720px) {
@@ -36,7 +36,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    background-color: var(--card-color-1);
+    background-color: var(--color-primary-background);
     overflow: visible;
     margin: 0;
     overflow-x: clip;
@@ -60,7 +60,7 @@
         @media screen and (min-width: 1020px) {
             display: flex;
             flex-direction: column;
-            margin: 1rem 2rem;
+            margin: 1rem 4rem;
             align-items: center;
             width: 80%;
             max-width: 600px;
@@ -81,14 +81,14 @@
 
     /* Nav layout */
     nav {
-        background-color: var(--background-color-2);
+        background-color: var(--color-surface);
         padding: 1rem 2rem;
         border-radius: 15px;
         width: 100%;
         margin: 0 auto;
-        overflow-x: auto;
+        /* overflow-x: auto;
         scrollbar-width: thin;
-        -webkit-overflow-scrolling: touch;
+        -webkit-overflow-scrolling: touch; */
     }
 
     /* Nav lijst stijl */
@@ -104,24 +104,12 @@
     /* Nav linkjes */
     ul.nav li a {
         white-space: nowrap;
-        color: var(--card-text-1);
+        color: var(--color-secondary);
         text-decoration: none;
         font-family: var(--site-font);
-        font-weight: 500;
+        font-weight: var(--font-weight-medium);
         padding: 0.3rem 0;
         display: block;
-    }
-
-    /* Nav contact button */
-    .contact-button {
-        color: var(--card-text-1);
-        padding: 0.6rem 1.2rem;
-        border-radius: 8px;
-        font-weight: bold;
-        border: none;
-        cursor: pointer;
-        margin-left: 2rem;
-        white-space: nowrap;
     }
 }
 
@@ -139,12 +127,15 @@
         justify-content: center;
         align-items: center;
         margin: 2rem auto 0rem;
+        font-size: var(--font-size-large);
+        font-weight: var(--font-weight-bold);
+        font-family: var(--heading-font);
     }
 
     h1 span {
         display: inline-block;
         font-size: var(--font-size-large);
-        font-weight: bold;
+        font-weight: var(--font-weight-bold);
         font-family: var(--heading-font);
         opacity: 0;
         transform-origin: center bottom;
@@ -160,8 +151,8 @@
         .arrow-down {
             display: block;
             text-align: center;
-            font-size: 3rem;
-            color: var(--card-text-1);
+            font-size: var(--font-size-large);
+            color: var(--color-text-light);
             opacity: 0;
             animation: fadeInScroll 1s ease forwards, pulseDown 1.5s infinite;
             animation-delay: 3s, 3.5s;
@@ -169,7 +160,6 @@
             user-select: none;
             text-decoration: none;
             transition: color 0.3s;
-            cursor: pointer;
         }
     }
 }
@@ -177,15 +167,15 @@
 /* Span intro text + animatie */
 .fade-in {
     display: block;
-    line-height: 1.7;
+    line-height: var(--line-height-normal);
     margin: 1rem auto 3rem;
     max-width: 500px;
     text-align: center;
     position: relative;
     z-index: 1;
-    color: var(--card-text-1);
+    color: var(--color-text-light);
     font-family: var(--site-font);
-    font-weight: 400;
+    font-weight: var(--font-weight-regular);
     opacity: 0;
     width: 80%;
     transform: translateY(20px);
@@ -194,7 +184,7 @@
 
     @media screen and (min-width: 1020px) {
         max-width: 480px;
-        line-height: 2.0;
+        line-height: var(--line-height-large);
     }
 }
 
@@ -208,7 +198,7 @@
     margin-right: auto;
     flex-direction: column;
     align-items: center;
-    z-index: 0;
+    z-index: 3;
     overflow: visible;
 
     @media (min-width: 720px) {
@@ -254,30 +244,34 @@
 
 /* Photo 1 */
 .photo-1 {
-    border-color: var(--card-color-4);
+    border-color: var(--card-color-1);
     z-index: 1;
     transform: translate(-52%, -50%) rotate(5deg);
+    box-shadow: var(--box-shadow);
 }
 
 /* Photo 2 */
 .photo-2 {
-    border-color: var(--card-color-2);
+    border-color: var(--card-color-1);
     z-index: 2;
     transform: translate(-48%, -50%) rotate(-4deg);
+    box-shadow: var(--box-shadow);
 }
 
 /* Photo 3 */
 .photo-3 {
-    border-color: var(--card-color-3);
+    border-color: var(--card-color-1);
     z-index: 3;
     transform: translate(-47%, -49%) rotate(5deg);
+    box-shadow: var(--box-shadow);
 }
 
 /* Photo 4 */
 .photo-4 {
-    border-color: var(--card-text-2);
+    border-color: var(--card-color-1);
     z-index: 4;
     transform: translate(-53%, -49%) rotate(-6deg);
+    box-shadow: var(--box-shadow);
 }
 
 /* img in photo */
@@ -286,6 +280,7 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    box-shadow: var(--box-shadow);
 }
 
 /* Golf svg onderaan sectie */
@@ -295,7 +290,61 @@
     left: 0;
     width: 100%;
     height: 120px;
-    z-index: 20;
+    z-index: 2;
     transform: rotate(180deg);
     transform-origin: center bottom;
+}
+
+.main-content {
+    display: grid;
+    gap: 2rem;
+    top: 7rem;
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    margin: 2rem;
+
+    @media (min-width: 1020px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        top: 8rem;
+        position: relative;
+        justify-content: center;
+        justify-items: center;
+        margin: 2rem;
+    }
+}
+
+.tile-1,
+.tile-2,
+.tile-3,
+.tile-4 {
+    background-color: var(--color-surface);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    height: 350px;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (min-width: 1020px) {
+        padding: 2rem;
+        width: 100%;
+        max-width: 500px;
+        height: 450px;
+    }
+
+    h2 {
+        font-family: var(--heading-font);
+        color: var(--color-text-dark);
+        font-weight: 300;
+    }
+
+    span {
+        font-family: var(--site-font);
+        color: var(--color-text-dark);
+    }
 }

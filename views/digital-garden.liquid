@@ -1,6 +1,6 @@
 {% render 'partials/head.liquid' %}
 
-{% comment %} <section class="articles">
+<section class="articles">
     <h2>Mijn files</h2>
     {% for file in files %}
     <a href="/digital-garden/{{ file|slice:0,-3}}">{{ file|slice:0,-3 }}</a>
@@ -8,26 +8,31 @@
 </section>
 
 <style>
+    body {
+        font-family: Arial, Helvetica, sans-serifnt
+    }
+
     .articles {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 2rem;
         height: 200px;
         width: 400px;
         align-items: center;
+        color: white;
+
+    }
+
+    a {
+        color: white;
     }
 
     h1 {
+        color: white;
         font-size: x-large;
         font-family: Arial, Helvetica, sans-serif;
     }
-</style> {% endcomment %}
-
-
-
-
-
-
-
+</style>
 
 {% comment %} {{ files | json }} {% endcomment %}
 
