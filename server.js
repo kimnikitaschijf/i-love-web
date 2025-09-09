@@ -45,11 +45,6 @@ app.get('/digital-garden', async function (request, response) {
   response.render('digital-garden.liquid', {files: files})
 })
 
-app.get('/test', async function (request, response) {
-  // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
-  response.render('test.liquid')
-})
-
 app.get('/404', async function (request, response) {
   response.render('partials/404.liquid')
 })

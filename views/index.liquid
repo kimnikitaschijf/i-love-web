@@ -3,24 +3,13 @@
 <section>
     <div class="logo-scroll">
         <div class="logo-track">
+            {% for i in (1..8) %}
             <span class="track-text">I love web</span>
             <span class="track-text">❤</span>
-            <span class="track-text">I love web</span>
-            <span class="track-text">❤</span>
-            <span class="track-text">I love web</span>
-            <span class="track-text">❤</span>
-            <span class="track-text">I love web</span>
-            <span class="track-text">❤</span>
-            <span class="track-text">I love web</span>
-            <span class="track-text">❤</span>
-            <span class="track-text">I love web</span>
-            <span class="track-text">❤</span>
-            <span class="track-text">I love web</span>
-            <span class="track-text">❤</span>
-            <span class="track-text">I love web</span>
-            <span class="track-text">❤</span>
+            {% endfor %}
         </div>
     </div>
+
 
     <section class="hero">
         <div class="hero-left">
@@ -47,61 +36,77 @@
 
         <div class="hero-right">
             <div class="photo-stack">
+
                 <div class="photo photo-1">
-                    <picture>
-                        <source type="image/avif" srcset="
-        /assets/cover-picture-1-400.avif 400w,
-        /assets/cover-picture-1-600.avif 600w,
-        /assets/cover-picture-1-800.avif 800w" sizes="(max-width: 720px) 250px, (max-width: 1020px) 300px, 350px" />
-                        <img src="/assets/cover-picture-1-800.jpg" alt="Foto van mij" loading="eager" decoding="async"
-                            fetchpriority="high" srcset="
-        /assets/cover-picture-1-400.jpg 400w,
-        /assets/cover-picture-1-600.jpg 600w,
-        /assets/cover-picture-1-800.jpg 800w" sizes="(max-width: 720px) 250px, (max-width: 1020px) 300px, 350px" />
-                    </picture>
+                    <img src="https://res.cloudinary.com/dcfitfken/image/upload/w_800,f_auto,q_auto/IMG_7307_qjlmco.jpg"
+                        srcset="
+          https://res.cloudinary.com/dcfitfken/image/upload/w_400,f_auto,q_auto/IMG_7307_qjlmco.jpg 400w,
+          https://res.cloudinary.com/dcfitfken/image/upload/w_600,f_auto,q_auto/IMG_7307_qjlmco.jpg 600w,
+          https://res.cloudinary.com/dcfitfken/image/upload/w_800,f_auto,q_auto/IMG_7307_qjlmco.jpg 800w"
+                        sizes="(max-width: 720px) 100vw, (max-width: 1020px) 50vw, 33vw" alt="Foto 1" loading="lazy"
+                        style="width:100%; height:auto; display:block;">
                 </div>
 
                 <div class="photo photo-2">
-                    <picture>
-                        <source type="image/avif" srcset="
-        /assets/cover-picture-2-400.avif 400w,
-        /assets/cover-picture-2-600.avif 600w,
-        /assets/cover-picture-2-800.avif 800w" sizes="(max-width: 720px) 280px, (max-width: 1020px) 320px, 370px" />
-                        <img src="/assets/cover-picture-2-800.jpg" alt="Foto van mij" loading="eager" decoding="async"
-                            srcset="
-        /assets/cover-picture-2-400.jpg 400w,
-        /assets/cover-picture-2-600.jpg 600w,
-        /assets/cover-picture-2-800.jpg 800w" sizes="(max-width: 720px) 280px, (max-width: 1020px) 320px, 370px" />
-                    </picture>
+                    <img src="https://res.cloudinary.com/dcfitfken/image/upload/w_800,f_auto,q_auto/cover-picture-1-800_qih5f2.jpg"
+                        srcset="
+          https://res.cloudinary.com/dcfitfken/image/upload/w_400,f_auto,q_auto/cover-picture-1-800_qih5f2.jpg 400w,
+          https://res.cloudinary.com/dcfitfken/image/upload/w_600,f_auto,q_auto/cover-picture-1-800_qih5f2.jpg 600w,
+          https://res.cloudinary.com/dcfitfken/image/upload/w_800,f_auto,q_auto/cover-picture-1-800_qih5f2.jpg 800w"
+                        sizes="(max-width: 720px) 100vw, (max-width: 1020px) 50vw, 33vw" alt="Foto 2" loading="lazy"
+                        style="width:100%; height:auto; display:block;">
                 </div>
 
                 <div class="photo photo-3">
-                    <picture>
-                        <source type="image/avif" srcset="
-        /assets/cover-picture-3-400.avif 400w,
-        /assets/cover-picture-3-600.avif 600w,
-        /assets/cover-picture-3-800.avif 800w" sizes="(max-width: 720px) 310px, (max-width: 1020px) 350px, 400px" />
-                        <img src="/assets/cover-picture-3-800.jpg" alt="Foto van mij" loading="lazy" decoding="async"
-                            srcset="
-        /assets/cover-picture-3-400.jpg 400w,
-        /assets/cover-picture-3-600.jpg 600w,
-        /assets/cover-picture-3-800.jpg 800w" sizes="(max-width: 720px) 310px, (max-width: 1020px) 350px, 400px" />
-                    </picture>
+                    <img src="https://res.cloudinary.com/dcfitfken/image/upload/w_800,f_auto,q_auto/IMG_1991_qerumt.heic"
+                        srcset="
+          https://res.cloudinary.com/dcfitfken/image/upload/w_400,f_auto,q_auto/IMG_1991_qerumt.heic 400w,
+          https://res.cloudinary.com/dcfitfken/image/upload/w_600,f_auto,q_auto/IMG_1991_qerumt.heic 600w,
+          https://res.cloudinary.com/dcfitfken/image/upload/w_800,f_auto,q_auto/IMG_1991_qerumt.heic 800w"
+                        sizes="(max-width: 720px) 100vw, (max-width: 1020px) 50vw, 33vw" alt="Foto 3" loading="lazy"
+                        style="width:100%; height:auto; display:block;">
                 </div>
 
                 <div class="photo photo-4">
-                    <picture>
-                        <source type="image/avif" srcset="
-        /assets/cover-picture-4-400.avif 400w,
-        /assets/cover-picture-4-600.avif 600w,
-        /assets/cover-picture-4-800.avif 800w" sizes="(max-width: 720px) 270px, (max-width: 1020px) 300px, 340px" />
-                        <img src="/assets/cover-picture-4-800.jpg" alt="Foto van mij" loading="lazy" decoding="async"
-                            srcset="
-        /assets/cover-picture-4-400.jpg 400w,
-        /assets/cover-picture-4-600.jpg 600w,
-        /assets/cover-picture-4-800.jpg 800w" sizes="(max-width: 720px) 270px, (max-width: 1020px) 300px, 340px" />
-                    </picture>
+                    <img src="https://res.cloudinary.com/dcfitfken/image/upload/w_800,f_auto,q_auto/IMG_6302_jgaog2.jpg"
+                        srcset="
+          https://res.cloudinary.com/dcfitfken/image/upload/w_400,f_auto,q_auto/IMG_6302_jgaog2.jpg 400w,
+          https://res.cloudinary.com/dcfitfken/image/upload/w_600,f_auto,q_auto/IMG_6302_jgaog2.jpg 600w,
+          https://res.cloudinary.com/dcfitfken/image/upload/w_800,f_auto,q_auto/IMG_6302_jgaog2.jpg 800w"
+                        sizes="(max-width: 720px) 100vw, (max-width: 1020px) 50vw, 33vw" alt="Foto 4" loading="lazy"
+                        style="width:100%; height:auto; display:block;">
                 </div>
+
+                <div class="photo photo-5">
+                    <img src="https://res.cloudinary.com/dcfitfken/image/upload/w_800,f_auto,q_auto/EBFCDFEF-E467-4159-B2A9-F5B34DE00D70_p6kgcb.png"
+                        srcset="
+          https://res.cloudinary.com/dcfitfken/image/upload/w_400,f_auto,q_auto/EBFCDFEF-E467-4159-B2A9-F5B34DE00D70_p6kgcb.png 400w,
+          https://res.cloudinary.com/dcfitfken/image/upload/w_600,f_auto,q_auto/EBFCDFEF-E467-4159-B2A9-F5B34DE00D70_p6kgcb.png 600w,
+          https://res.cloudinary.com/dcfitfken/image/upload/w_800,f_auto,q_auto/EBFCDFEF-E467-4159-B2A9-F5B34DE00D70_p6kgcb.png 800w"
+                        sizes="(max-width: 720px) 100vw, (max-width: 1020px) 50vw, 33vw" alt="Foto 5" loading="lazy"
+                        style="width:100%; height:auto; display:block;">
+                </div>
+
+                <div class="photo photo-6">
+                    <img src="https://res.cloudinary.com/dcfitfken/image/upload/w_800,f_auto,q_auto/IMG_6157_xyzlky.heic"
+                        srcset="
+          https://res.cloudinary.com/dcfitfken/image/upload/w_400,f_auto,q_auto/IMG_6157_xyzlky.heic 400w,
+          https://res.cloudinary.com/dcfitfken/image/upload/w_600,f_auto,q_auto/IMG_6157_xyzlky.heic 600w,
+          https://res.cloudinary.com/dcfitfken/image/upload/w_800,f_auto,q_auto/IMG_6157_xyzlky.heic 800w"
+                        sizes="(max-width: 720px) 100vw, (max-width: 1020px) 50vw, 33vw" alt="Foto 6" loading="lazy"
+                        style="width:100%; height:auto; display:block;">
+                </div>
+
+                <div class="photo photo-7">
+                    <img src="https://res.cloudinary.com/dcfitfken/image/upload/w_800,f_auto,q_auto/IMG_2374_klfucy.jpg"
+                        srcset="
+          https://res.cloudinary.com/dcfitfken/image/upload/w_400,f_auto,q_auto/IMG_2374_klfucy.jpg 400w,
+          https://res.cloudinary.com/dcfitfken/image/upload/w_600,f_auto,q_auto/IMG_2374_klfucy.jpg 600w,
+          https://res.cloudinary.com/dcfitfken/image/upload/w_800,f_auto,q_auto/IMG_2374_klfucy.jpg 800w"
+                        sizes="(max-width: 720px) 100vw, (max-width: 1020px) 50vw, 33vw" alt="Foto 7" loading="lazy"
+                        style="width:100%; height:auto; display:block;">
+                </div>
+
             </div>
         </div>
 
