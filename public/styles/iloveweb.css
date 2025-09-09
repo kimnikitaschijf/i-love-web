@@ -11,7 +11,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: var(--color-background);
+    background: var(--color-surface);
 
     @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
@@ -47,13 +47,11 @@ body {
     /* Basiskleuren */
     --color-primary-background: #E9DCC9;
     /* warm zand / caramel */
-    --color-surface: #F9F4EF;
+    --color-surface: #fdf9f5;
     /* lichte crème vlakken */
 
     /* Accentkleuren */
     --color-primary: #D97B48;
-    /* terracotta / oranje-bruin */
-    --color-secondary: #7B3E3E;
     /* diep wijnrood */
     --color-accent: #6f1911;
     /* zacht mosgroen (optioneel accent) */
@@ -67,7 +65,6 @@ body {
     /* Neutralen */
     --color-black: #000000;
     --color-white: #F6F6F6;
-
 
     /* MARK: Cards */
     --card-color-1: var(--color-accent);

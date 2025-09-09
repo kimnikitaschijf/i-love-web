@@ -7,6 +7,7 @@
     font-family: var(--site-font);
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-bold);
+    cursor: default;
 
     /* Styling in scroll */
     .logo-track {
@@ -83,7 +84,7 @@
     nav {
         background-color: var(--color-surface);
         padding: 1rem 2rem;
-        border-radius: 15px;
+        border-radius: var(--border-radius);
         width: 100%;
         margin: 0 auto;
         /* overflow-x: auto;
@@ -104,7 +105,7 @@
     /* Nav linkjes */
     ul.nav li a {
         white-space: nowrap;
-        color: var(--color-secondary);
+        color: var(--color-accent);
         text-decoration: none;
         font-family: var(--site-font);
         font-weight: var(--font-weight-medium);
@@ -323,56 +324,103 @@
     transform-origin: center bottom;
 }
 
-.main-content {
-    display: grid;
-    gap: 2rem;
-    top: 7rem;
-    position: relative;
-    justify-content: center;
-    justify-items: center;
-    margin: 2rem;
 
-    @media (min-width: 1020px) {
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
-        top: 8rem;
-        position: relative;
-        justify-content: center;
-        justify-items: center;
-        margin: 2rem;
+
+
+
+
+
+
+.main-content {
+    display: flex;
+    overflow-x: auto;
+    gap: 2rem;
+    padding: 2rem;
+    position: relative;
+    top: 7rem;
+    flex-wrap: nowrap;
+    scrollbar-width: thin;
+}
+
+.main-content::-webkit-scrollbar {
+    height: 8px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background-color: var(--color-accent);
+    border-radius: 4px;
+}
+
+.tile {
+    flex: 0 0 auto;
+    background-color: var(--color-primary-background);
+    width: 25rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: var(--border-radius);
+}
+
+/* Scrollende logo-track */
+.logo-scroll-tile {
+    overflow: hidden;
+    background-color: var(--color-accent);
+    padding: 1rem 0;
+    width: 100%;
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold);
+    font-family: var(--site-font);
+    border-radius: var(--border-radius-footer);
+    cursor: default;
+}
+
+.logo-track-tile {
+    display: flex;
+    gap: 1rem;
+    animation: scrollLeft 15s linear infinite;
+    width: max-content;
+    color: var(--color-surface);
+    letter-spacing: 0.3rem;
+}
+
+@media (min-width: 720px) {
+    .logo-track-tile {
+        gap: 2rem;
     }
 }
 
-.tile-1,
-.tile-2,
-.tile-3,
-.tile-4 {
-    background-color: var(--color-surface);
-    padding: 2rem;
-    width: 100%;
-    max-width: 400px;
-    height: 350px;
-    border-radius: var(--border-radius);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+@media (min-width: 1020px) {
+    .logo-track-tile {
+        gap: 3rem;
+    }
+}
 
-    @media (min-width: 1020px) {
-        padding: 2rem;
-        width: 100%;
-        max-width: 500px;
-        height: 450px;
+.tile-title {
+    padding: 1rem 2rem;
+    font-size: var(--font-size-medium);
+    text-align: center;
+    font-family: var(--heading-font);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-light);
+}
+
+.tile-description {
+    padding: 0 2rem;
+    text-align: center;
+    font-size: var(--font-size-small);
+    line-height: 1.5;
+    font-family: var(--site-font);
+    color: var(--color-text-light)
+}
+
+/* Animatie voor scrollende track */
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
     }
 
-    h2 {
-        font-family: var(--heading-font);
-        color: var(--color-text-dark);
-        font-weight: 300;
-    }
-
-    span {
-        font-family: var(--site-font);
-        color: var(--color-text-dark);
+    100% {
+        transform: translateX(-50%);
     }
 }

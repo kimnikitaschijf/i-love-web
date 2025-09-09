@@ -26,7 +26,8 @@
 
             <div class="hero-text">
                 <h1 id="hero-text">Welcome to my website</h1>
-                <span class="fade-in">Explore my Digital Garden, check out my latest projects, dive into We Love Web,
+                <span class="fade-in">My name is Kim Nikita. I'm a 20 year old FDND Student. <br>Explore my Digital
+                    Garden, check out my latest projects, dive into We Love Web lectures,
                     and join me on my Learning Journal journey.</span>
                 <span class="arrow-down" aria-label="Scroll to next section">
                     ↓
@@ -116,27 +117,100 @@
     </section>
 </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="main-content" id="main-content">
-    <div class="tile-1">
-        <h2>Title</h2>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</span>
-    </div>
-    <div class="tile-2">
-        <h2>Title</h2>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</span>
-    </div>
-    <div class="tile-3">
-        <h2>Title</h2>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</span>
-    </div>
-    <div class="tile-4">
-        <h2>Title</h2>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</span>
-    </div>
+    <article class="tile">
+
+        <div class="logo-scroll-tile" aria-hidden="true">
+            <div class="logo-track-tile">
+                {% for i in (1..4) %}
+                <span class="track-text-tile">Learning Journal</span>
+                <span class="track-text-tile">❤</span>
+                {% endfor %}
+            </div>
+        </div>
+
+        <h2 class="tile-title">Learning Journal</h2>
+
+        <p class="tile-description">
+            My learning journal is a space where I keep track of what I’m learning, reflect on
+            my progress, and explore new ideas and experiments. Click to explore and see what I’m learning next!
+        </p>
+
+    </article>
+
+
+
+
+
+
+
+
+
+    <article class="tile">
+         <div class="logo-scroll-tile" aria-hidden="true">
+            <div class="logo-track-tile">
+                {% for i in (1..4) %}
+                <span class="track-text-tile">We love web</span>
+                <span class="track-text-tile">❤</span>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="tile-right">
+            <h2 class="tile-title">We love web</h2>
+            <span class="tile-span"></span>
+        </div>
+    </article>
+
+    <article class="tile">
+         <div class="logo-scroll-tile" aria-hidden="true">
+            <div class="logo-track-tile">
+                {% for i in (1..4) %}
+                <span class="track-text-tile">Digital Garden</span>
+                <span class="track-text-tile">❤</span>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="tile-right">
+            <h2 class="tile-title">Digital Graden</h2>
+            <span class="tile-span"></span>
+        </div>
+    </article>
+
+    <article class="tile">
+        <div class="logo-scroll-tile" aria-hidden="true">
+            <div class="logo-track-tile">
+                {% for i in (1..4) %}
+                <span class="track-text-tile">Projects</span>
+                <span class="track-text-tile">❤</span>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="tile-right">
+            <h2 class="tile-title">Projects</h2>
+            <span class="tile-span"></span>
+        </div>
+    </article>
+
+
 </section>
 
 {% render 'partials/foot.liquid' %}
