@@ -168,7 +168,7 @@
 /* Span intro text + animatie */
 .fade-in {
     display: block;
-    line-height: var(--line-height-normal);
+    line-height: 1.8;
     margin: 1rem auto 3rem;
     max-width: 500px;
     text-align: center;
@@ -185,7 +185,6 @@
 
     @media screen and (min-width: 1020px) {
         max-width: 480px;
-        line-height: var(--line-height-large);
     }
 }
 
