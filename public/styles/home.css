@@ -87,6 +87,7 @@
         border-radius: var(--border-radius);
         width: 100%;
         margin: 0 auto;
+        box-shadow: var(--box-shadow);
         /* overflow-x: auto;
         scrollbar-width: thin;
         -webkit-overflow-scrolling: touch; */
@@ -241,6 +242,7 @@
     transition: none;
     border-width: 4px;
     border-style: solid;
+    box-shadow: var(--box-shadow);
     width: clamp(240px, 35vw, 320px);
     height: clamp(300px, 40vw, 380px);
 }
@@ -350,7 +352,7 @@
     border-radius: 4px;
 }
 
-.tile {
+.card {
     flex: 0 0 auto;
     background-color: var(--color-primary-background);
     width: 25rem;
@@ -362,7 +364,7 @@
 }
 
 /* Scrollende logo-track */
-.logo-scroll-tile {
+.logo-scroll-card {
     overflow: hidden;
     background-color: var(--color-accent);
     padding: 1rem 0;
@@ -374,7 +376,7 @@
     cursor: default;
 }
 
-.logo-track-tile {
+.logo-track-card {
     display: flex;
     gap: 1rem;
     animation: scrollLeft 15s linear infinite;
@@ -384,18 +386,18 @@
 }
 
 @media (min-width: 720px) {
-    .logo-track-tile {
+    .logo-track-card {
         gap: 2rem;
     }
 }
 
 @media (min-width: 1020px) {
-    .logo-track-tile {
+    .logo-track-card {
         gap: 3rem;
     }
 }
 
-.tile-title {
+.card-title {
     padding: 1rem 2rem;
     font-size: var(--font-size-medium);
     text-align: center;
@@ -404,7 +406,7 @@
     color: var(--color-text-light);
 }
 
-.tile-description {
+.card-description {
     padding: 0 2rem;
     text-align: center;
     font-size: var(--font-size-small);
@@ -413,13 +415,24 @@
     color: var(--color-text-light)
 }
 
-/* Animatie voor scrollende track */
-@keyframes scrollLeft {
-    0% {
-        transform: translateX(0);
+.card-button {
+    background-color: var(--color-surface);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: var(--border-radius);
+    color: var(--color-accent);
+    font-family: var(--site-font);
+    box-shadow: var(--box-shadow);
+
+    &:hover {
+        background-color: var(--color-primary);
+        color: var(--color-surface);
+        transition:
+            background 0.4s,
+            color 0.4s;
     }
 
-    100% {
-        transform: translateX(-50%);
+    &::after {
+       display: none;
     }
 }
