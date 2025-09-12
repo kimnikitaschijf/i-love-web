@@ -124,7 +124,7 @@
 
 
 
-
+{% comment %} MARK: tiles {% endcomment %}
 
 
 
@@ -144,26 +144,16 @@
                 {% endfor %}
             </div>
         </div>
-
         <h2 class="tile-title">Learning Journal</h2>
-
         <p class="tile-description">
             My learning journal is a space where I keep track of what I’m learning, reflect on
             my progress, and explore new ideas and experiments. Click to explore and see what I’m learning next!
         </p>
-
+        <a href="https://github.com/kimnikitaschijf/i-love-web/wiki">Discover my learning journal! </a>
     </article>
 
-
-
-
-
-
-
-
-
     <article class="tile">
-         <div class="logo-scroll-tile" aria-hidden="true">
+        <div class="logo-scroll-tile" aria-hidden="true">
             <div class="logo-track-tile">
                 {% for i in (1..4) %}
                 <span class="track-text-tile">We love web</span>
@@ -174,12 +164,13 @@
 
         <div class="tile-right">
             <h2 class="tile-title">We love web</h2>
-            <span class="tile-span"></span>
+            <span class="tile-span">...</span>
         </div>
+        <a href="#">Read more about we love web! </a>
     </article>
 
     <article class="tile">
-         <div class="logo-scroll-tile" aria-hidden="true">
+        <div class="logo-scroll-tile" aria-hidden="true">
             <div class="logo-track-tile">
                 {% for i in (1..4) %}
                 <span class="track-text-tile">Digital Garden</span>
@@ -190,8 +181,10 @@
 
         <div class="tile-right">
             <h2 class="tile-title">Digital Graden</h2>
-            <span class="tile-span"></span>
+            <span class="tile-span">This is a digital playground to practise new methods of code. Check it out!</span>
         </div>
+        <a href="#">Discover my learning journal! </a>
+
     </article>
 
     <article class="tile">
@@ -206,11 +199,10 @@
 
         <div class="tile-right">
             <h2 class="tile-title">Projects</h2>
-            <span class="tile-span"></span>
+            <span class="tile-span">... </span>
         </div>
+        <a href="https://github.com/kimnikitaschijf">Discover my learning journal! </a>
     </article>
-
-
 </section>
 
 {% render 'partials/foot.liquid' %}
